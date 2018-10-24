@@ -52,13 +52,12 @@ public class AddClientActivity extends AppCompatActivity {
             }
         }
         CurrentState.setScroll_state(60);
-//        String to_display = ip_display.getText().toString() + " Port " + Integer.toString(port);
-//        ip_display.setText(to_display);
 
         //Set button click listener
         save_script_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Script.setScript(script_container.getText().toString() + "\n\n\n");
+                String newScript = script_container.getText().toString().replaceAll("\n\n","\n");
+                Script.setScript(newScript + "\n\n\n");
                 CurrentState.setScroll_state(0);
                 CurrentState.setTeleprompter_active(true);
                 Intent intent = new Intent(v.getContext(), MainControlActivity.class);

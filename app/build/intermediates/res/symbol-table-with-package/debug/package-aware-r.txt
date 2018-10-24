@@ -672,6 +672,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable check
 drawable choose_mode
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
@@ -825,6 +826,7 @@ id line1
 id line3
 id listMode
 id list_item
+id loading_script_container
 id media_actions
 id message
 id middle
@@ -920,6 +922,9 @@ id topPanel
 id touch_area_container
 id uniform
 id up
+id update_done_image
+id update_script_progress
+id updating_script_text
 id useLogo
 id vmix_ip
 id vmix_ip_title

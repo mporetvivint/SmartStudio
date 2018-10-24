@@ -3,15 +3,25 @@ package com.vivintsolar.SmartStudio.GUI;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.transition.TransitionManager;
 import android.util.Log;
+import android.view.KeyEvent;
+import android.view.View;
+import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.view.WindowManager;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import com.vivintsolar.SmartStudio.Comm.GetUpdatedScript;
+import com.vivintsolar.SmartStudio.Comm.OnEventListener;
+import com.vivintsolar.SmartStudio.Model.CurrentState;
 import com.vivintsolar.SmartStudio.R;
 
 import com.vivintsolar.SmartStudio.Comm.ActivePinger;
@@ -27,6 +37,9 @@ public class TeleprompterActivity extends AppCompatActivity {
     private boolean scrolling;
     private Scroller scroller;
     private ActivePinger pinger;
+    private RelativeLayout loading_script_container;
+    private ProgressBar progressSpinner;
+    private ImageView updateDoneImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +55,11 @@ public class TeleprompterActivity extends AppCompatActivity {
             script_view = findViewById(R.id.prompter_only_script_container);
             script_container.setScaleX(1.78f);
             script_container.setScaleY(1.78f);
+
+            //Loading Script
+            loading_script_container = findViewById(R.id.loading_script_container);
+            progressSpinner = findViewById(R.id.update_script_progress);
+            updateDoneImage = findViewById(R.id.update_done_image);
         }
         else{
             //There is a tally light
@@ -67,7 +85,6 @@ public class TeleprompterActivity extends AppCompatActivity {
             script_view = findViewById(R.id.script_container);
             script_container.setScaleX(1.78f);
             script_container.setScaleY(1.78f);
-
 
         }
 
@@ -109,5 +126,59 @@ public class TeleprompterActivity extends AppCompatActivity {
 
     public void syncTo(int position){
         script_container.smoothScrollTo(0,position);
+    }
+
+    @Override
+    public boolean dispatchKeyEvent(KeyEvent event) {
+        int action = event.getAction();
+        int keyCode = event.getKeyCode();
+        switch (keyCode) {
+            case KeyEvent.KEYCODE_VOLUME_UP:
+                if (action == KeyEvent.ACTION_DOWN) {
+                    updateScript();
+                }
+                return true;
+            case KeyEvent.KEYCODE_VOLUME_DOWN:
+                if (action == KeyEvent.ACTION_DOWN) {
+                    updateScript();
+                }
+                return true;
+            default:
+                return super.dispatchKeyEvent(event);
+        }
+    }
+
+    private void updateScript(){
+        //TODO get the animation working to show check mark on completion
+//        progressSpinner.setAlpha(1.0f);
+//        updateDoneImage.setAlpha(0.0f);
+        updateDoneImage.setVisibility(View.INVISIBLE);
+        TransitionManager.beginDelayedTransition((ViewGroup) loading_script_container);
+        loading_script_container.setVisibility(View.VISIBLE);
+
+        GetUpdatedScript getUpdatedScript = new GetUpdatedScript("1.1.1.1", new OnEventListener() {
+            @Override
+            public void onSuccess(Object object) {
+                doneUpdating((String) object);
+            }
+        });
+        getUpdatedScript.execute();
+    }
+
+    public void doneUpdating(String script){
+        updateDoneImage.setVisibility(View.VISIBLE);
+        Script.setScript(script);
+        script_view.setText(script);
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        TransitionManager.beginDelayedTransition((ViewGroup) loading_script_container);
+        loading_script_container.setVisibility(View.GONE);
+    }
+
+    public void hideUpdateOverlay(){
+        loading_script_container.setAlpha(0.0f);
     }
 }

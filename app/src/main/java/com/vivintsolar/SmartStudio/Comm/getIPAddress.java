@@ -23,14 +23,6 @@ public class getIPAddress extends AsyncTask<Void,Void,String> {
 
     @Override
     protected String doInBackground(Void... addClientActivities) {
-//        InetAddress inetAddress = null;
-//        try {
-//            inetAddress = InetAddress.getLocalHost();
-//            return inetAddress.getHostAddress();
-//        } catch (UnknownHostException e) {
-//            e.printStackTrace();
-//            return "error";
-//        }
 
         WifiManager wm = (WifiManager) ip_display.getContext().getApplicationContext().getSystemService(WIFI_SERVICE);
         return Formatter.formatIpAddress(wm.getConnectionInfo().getIpAddress());

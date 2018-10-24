@@ -83,7 +83,6 @@ public class ActivePinger {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        Log.d("got_response", response);
                         activity.syncTo((int)(Integer.parseInt(response) * conversion));
                     }
                 }, new Response.ErrorListener() {
