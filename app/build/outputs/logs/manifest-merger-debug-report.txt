@@ -1,0 +1,285 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:1-65:12
+INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:1-65:12
+INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:1-65:12
+INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:1-65:12
+MERGED from [com.android.support:appcompat-v7:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/0a539ad2be077a0e290057ae493348ff/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/ab24fd3d0d381d1e88887d020ba93ae1/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.gms:play-services-drive:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-drive-15.0.1.aar/d2a11d665b37e374137cb77ddc0f3951/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/d95a341d473069f7bc8e77d692added6/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/32f78e2cdf1856b968981968bfb70293/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/9e5177609286bd531189ce8299e561e0/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0-rc01.aar/1b2e452a3afd8ca803cb217fa8a579dd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0-rc01.aar/93b3b52bafd4021e9ad3962da9804ea3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.volley:volley:1.1.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/volley-1.1.1.aar/c14663d3f5c227f72a9bbff78abf2203/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-rc01.aar/b462307a01c186fa820b278bc5fda99f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-rc01.aar/b205890f123743c0e0a676b69b2272fd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-rc01.aar/e415d80c4e8c2151e99de877d13de035/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-rc01.aar/69b0ed0a447ece80b35510622c4d373c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-rc01.aar/632feba8c09e475658a7c9a269eb9115/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-rc01.aar/a59b292fb2abd109e1702c88c3f34c54/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-rc01.aar/30cb9aa5ef47ec9465b03d98d31da2c7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-rc01.aar/c98fb496f7f59002d0b601811802ae37/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-rc01.aar/3e95b0aad891ce217cae09a7555195bf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-rc01.aar/72daf7cb00a7c3b163d4573b4576c822/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-rc01.aar/724e6c7a1614af768867d9e48838555a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-rc01.aar/db6f3db9f2acc307e2826abde337efc7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-rc01.aar/cf992703b80e8df335b1f0517ef2a667/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0-rc01.aar/0e80a2540b1c66dc3272f4dd3699b6ec/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc01.aar/41af56cb2b3188fb7e7a5b6450a55549/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc01.aar/396f2b25d3bf918f0c0d00ba06b5f7b4/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-rc01.aar/37d040e80478f7bde24639ab4f3226c4/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/8e4b84e92bca29d22dbfa224d6425c0e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-rc01.aar/53e1922be703c124c3d08b69a7b99eb1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-rc01.aar/b136782d58aaaec9980dec1d6bd27040/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/print-28.0.0-rc01.aar/49a6f0188727b16ba9bf57b90bb794bf/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/37352c7ca14ad63b592cd99ad07e617c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-rc01.aar/4cbf348ffebecaaf26d8b4dcc05f2a74/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/a7eff9480a877134b8d1ec91c42a310d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f755a17339d3a05bec52ffd155989883/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:1-65:12
+INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:1-65:12
+INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:1-65:12
+	package
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:3:5-42
+		INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:1-65:12
+		INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:1-65:12
+		INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:6:5-76
+	android:name
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:6:22-73
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:7:5-71
+	android:name
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:7:22-68
+application
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:9:5-63:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/ab24fd3d0d381d1e88887d020ba93ae1/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/ab24fd3d0d381d1e88887d020ba93ae1/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-drive:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-drive-15.0.1.aar/d2a11d665b37e374137cb77ddc0f3951/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-drive:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-drive-15.0.1.aar/d2a11d665b37e374137cb77ddc0f3951/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/d95a341d473069f7bc8e77d692added6/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/d95a341d473069f7bc8e77d692added6/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/32f78e2cdf1856b968981968bfb70293/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/32f78e2cdf1856b968981968bfb70293/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/9e5177609286bd531189ce8299e561e0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/9e5177609286bd531189ce8299e561e0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.volley:volley:1.1.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/volley-1.1.1.aar/c14663d3f5c227f72a9bbff78abf2203/AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/volley-1.1.1.aar/c14663d3f5c227f72a9bbff78abf2203/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc01.aar/41af56cb2b3188fb7e7a5b6450a55549/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc01.aar/41af56cb2b3188fb7e7a5b6450a55549/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc01.aar/396f2b25d3bf918f0c0d00ba06b5f7b4/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc01.aar/396f2b25d3bf918f0c0d00ba06b5f7b4/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc01.aar/41af56cb2b3188fb7e7a5b6450a55549/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:12:9-41
+	android:roundIcon
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:13:9-54
+	android:icon
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:11:9-38
+	android:allowBackup
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:10:9-35
+	android:theme
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:15:9-40
+meta-data#com.google.android.apps.drive.APP_ID
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:16:9-166
+	android:value
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:16:72-163
+	android:name
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:16:20-71
+activity#com.vivintsolar.SmartStudio.GUI.TeleprompterActivity
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:17:9-23:20
+	android:screenOrientation
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:19:13-50
+	android:name
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:18:13-53
+intent-filter#category:name:android.intent.category.LAUNCHER
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:20:13-22:29
+category#android.intent.category.LAUNCHER
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:21:17-77
+	android:name
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:21:27-74
+activity#com.vivintsolar.SmartStudio.GUI.ModePickerActivity
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:24:9-33:20
+	android:screenOrientation
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:26:13-50
+	android:name
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:25:13-51
+intent-filter#action:name:android.intent.action.MAIN+action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:27:13-32:29
+action#android.intent.action.MAIN
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:28:17-69
+	android:name
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:28:25-66
+activity#com.vivintsolar.SmartStudio.GUI.AddClientActivity
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:34:9-49:20
+	android:screenOrientation
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:36:13-49
+	android:name
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:35:13-50
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:smartstudio.vivintsolar.com+data:mimeType:text/plain+data:pathPrefix:/script/+data:scheme:http
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:37:13-48:29
+action#android.intent.action.VIEW
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:38:17-69
+	android:name
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:38:25-66
+category#android.intent.category.DEFAULT
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:40:17-76
+	android:name
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:40:27-73
+category#android.intent.category.BROWSABLE
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:41:17-78
+	android:name
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:41:27-75
+data
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:43:17-47:53
+	android:host
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:45:21-63
+	android:scheme
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:44:21-42
+	android:mimeType
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:46:21-50
+	android:pathPrefix
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:47:21-50
+activity#com.vivintsolar.SmartStudio.GUI.ClientAddress
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:50:9-52:53
+	android:screenOrientation
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:52:13-50
+	android:name
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:51:13-46
+activity#com.vivintsolar.SmartStudio.GUI.TallyOnlyActivity
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:53:9-58:54
+	android:screenOrientation
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:57:13-50
+	android:label
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:56:13-62
+	android:configChanges
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:55:13-74
+	android:theme
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:58:13-51
+	android:name
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:54:13-50
+activity#com.vivintsolar.SmartStudio.GUI.MainControlActivity
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:59:9-61:61
+	android:screenOrientation
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:61:13-49
+	android:name
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:60:13-52
+activity#com.vivintsolar.SmartStudio.GUI.TeleprompterWaitActivity
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:62:9-75
+	android:name
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:62:19-63
+uses-sdk
+INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml
+INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/0a539ad2be077a0e290057ae493348ff/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/0a539ad2be077a0e290057ae493348ff/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/ab24fd3d0d381d1e88887d020ba93ae1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/ab24fd3d0d381d1e88887d020ba93ae1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-drive:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-drive-15.0.1.aar/d2a11d665b37e374137cb77ddc0f3951/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-drive:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-drive-15.0.1.aar/d2a11d665b37e374137cb77ddc0f3951/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/d95a341d473069f7bc8e77d692added6/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/d95a341d473069f7bc8e77d692added6/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/32f78e2cdf1856b968981968bfb70293/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/32f78e2cdf1856b968981968bfb70293/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/9e5177609286bd531189ce8299e561e0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/9e5177609286bd531189ce8299e561e0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0-rc01.aar/1b2e452a3afd8ca803cb217fa8a579dd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0-rc01.aar/1b2e452a3afd8ca803cb217fa8a579dd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0-rc01.aar/93b3b52bafd4021e9ad3962da9804ea3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0-rc01.aar/93b3b52bafd4021e9ad3962da9804ea3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.volley:volley:1.1.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/volley-1.1.1.aar/c14663d3f5c227f72a9bbff78abf2203/AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/volley-1.1.1.aar/c14663d3f5c227f72a9bbff78abf2203/AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:support-fragment:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-rc01.aar/b462307a01c186fa820b278bc5fda99f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-rc01.aar/b462307a01c186fa820b278bc5fda99f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-rc01.aar/b205890f123743c0e0a676b69b2272fd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-rc01.aar/b205890f123743c0e0a676b69b2272fd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-rc01.aar/e415d80c4e8c2151e99de877d13de035/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-rc01.aar/e415d80c4e8c2151e99de877d13de035/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-rc01.aar/69b0ed0a447ece80b35510622c4d373c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-rc01.aar/69b0ed0a447ece80b35510622c4d373c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-rc01.aar/632feba8c09e475658a7c9a269eb9115/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-rc01.aar/632feba8c09e475658a7c9a269eb9115/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-rc01.aar/a59b292fb2abd109e1702c88c3f34c54/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-rc01.aar/a59b292fb2abd109e1702c88c3f34c54/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-rc01.aar/30cb9aa5ef47ec9465b03d98d31da2c7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-rc01.aar/30cb9aa5ef47ec9465b03d98d31da2c7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-rc01.aar/c98fb496f7f59002d0b601811802ae37/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-rc01.aar/c98fb496f7f59002d0b601811802ae37/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-rc01.aar/3e95b0aad891ce217cae09a7555195bf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-rc01.aar/3e95b0aad891ce217cae09a7555195bf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-rc01.aar/72daf7cb00a7c3b163d4573b4576c822/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-rc01.aar/72daf7cb00a7c3b163d4573b4576c822/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-rc01.aar/724e6c7a1614af768867d9e48838555a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-rc01.aar/724e6c7a1614af768867d9e48838555a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-rc01.aar/db6f3db9f2acc307e2826abde337efc7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-rc01.aar/db6f3db9f2acc307e2826abde337efc7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-rc01.aar/cf992703b80e8df335b1f0517ef2a667/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-rc01.aar/cf992703b80e8df335b1f0517ef2a667/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0-rc01.aar/0e80a2540b1c66dc3272f4dd3699b6ec/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0-rc01.aar/0e80a2540b1c66dc3272f4dd3699b6ec/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc01.aar/41af56cb2b3188fb7e7a5b6450a55549/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc01.aar/41af56cb2b3188fb7e7a5b6450a55549/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc01.aar/396f2b25d3bf918f0c0d00ba06b5f7b4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc01.aar/396f2b25d3bf918f0c0d00ba06b5f7b4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-rc01.aar/37d040e80478f7bde24639ab4f3226c4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-rc01.aar/37d040e80478f7bde24639ab4f3226c4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/8e4b84e92bca29d22dbfa224d6425c0e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/8e4b84e92bca29d22dbfa224d6425c0e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-rc01.aar/53e1922be703c124c3d08b69a7b99eb1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-rc01.aar/53e1922be703c124c3d08b69a7b99eb1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-rc01.aar/b136782d58aaaec9980dec1d6bd27040/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-rc01.aar/b136782d58aaaec9980dec1d6bd27040/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/print-28.0.0-rc01.aar/49a6f0188727b16ba9bf57b90bb794bf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/print-28.0.0-rc01.aar/49a6f0188727b16ba9bf57b90bb794bf/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/37352c7ca14ad63b592cd99ad07e617c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/37352c7ca14ad63b592cd99ad07e617c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-rc01.aar/4cbf348ffebecaaf26d8b4dcc05f2a74/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-rc01.aar/4cbf348ffebecaaf26d8b4dcc05f2a74/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/a7eff9480a877134b8d1ec91c42a310d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/a7eff9480a877134b8d1ec91c42a310d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f755a17339d3a05bec52ffd155989883/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f755a17339d3a05bec52ffd155989883/AndroidManifest.xml:20:5-44
+INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml
+INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/d95a341d473069f7bc8e77d692added6/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/d95a341d473069f7bc8e77d692added6/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/d95a341d473069f7bc8e77d692added6/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/d95a341d473069f7bc8e77d692added6/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/9e5177609286bd531189ce8299e561e0/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/9e5177609286bd531189ce8299e561e0/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/9e5177609286bd531189ce8299e561e0/AndroidManifest.xml:24:13-58

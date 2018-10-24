@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/smart_studio_landscape"
+    android:orientation="vertical"
+    tools:context=".GUI.ClientAddress">
+
+    <LinearLayout
+        android:id="@+id/label_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/teleprompter_options_container"
+        android:orientation="horizontal"
+        android:paddingTop="25dp">
+
+        <TextView
+            android:id="@+id/vmix_ip_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/aldrich"
+            android:text="VMIX ADDRESS"
+            android:textAlignment="center"
+            android:textColor="@color/disabledControls"
+            android:textSize="29sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vmix_port_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/aldrich"
+            android:text="PORT"
+            android:textAlignment="center"
+            android:textColor="@color/disabledControls"
+            android:textSize="29sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tablet_ip_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/aldrich"
+            android:text="CONTROL ADDRESS"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="29sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tablet_port_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/aldrich"
+            android:text="PORT"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="29sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/label_layout"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/vmix_ip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:enabled="true"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="true"
+            android:text="*.*.*.*"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/vmix_port"
+            style="@android:style/Widget.Material.Light.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/aldrich"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="true"
+            android:singleLine="false"
+            android:text="8088"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/tablet_ip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="true"
+            android:text="*.*.*.*"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/tablet_port"
+            style="@android:style/Widget.Material.Light.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:fontFamily="@font/aldrich"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="true"
+            android:singleLine="false"
+            android:text="8080"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/teleprompter_options_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/tally_switch_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/aldrich"
+            android:text="Tally Light"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+
+        <CheckBox
+            android:id="@+id/tally_cheeck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:buttonTint="@android:color/background_light"
+            android:checked="false" />
+
+        <TextView
+            android:id="@+id/prompter_switch_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/aldrich"
+            android:text="Teleprompter"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+
+        <CheckBox
+            android:id="@+id/prompter_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:buttonTint="@android:color/background_light"
+            android:checked="true" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="199dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/edit_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:background="#757575"
+        android:fontFamily="@font/aldrich"
+        android:text="START"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

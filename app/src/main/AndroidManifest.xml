@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vivintsolar.SmartStudio">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data android:name="com.google.android.apps.drive.APP_ID" android:value="id=188768208820-55ge4clim5bf33hdd21rt19imhcpcfdo.apps.googleusercontent.com" />
+        <activity
+            android:name=".GUI.TeleprompterActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GUI.ModePickerActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GUI.AddClientActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="smartstudio.vivintsolar.com"
+                    android:mimeType="text/plain"
+                    android:pathPrefix="/script/" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GUI.ClientAddress"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GUI.TallyOnlyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_tally_only"
+            android:screenOrientation="landscape"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".GUI.MainControlActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".GUI.TeleprompterWaitActivity"></activity>
+    </application>
+
+</manifest>

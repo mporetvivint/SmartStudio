@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GUI.TeleprompterActivity">
+
+    <ScrollView
+        android:id="@+id/prompter_only_scroll_container"
+        android:layout_width="768dp"
+        android:layout_height="392dp"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/prompter_only_script_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#222222"
+            android:breakStrategy="simple"
+            android:lineSpacingExtra="5sp"
+            android:text="@string/test_script"
+            android:textAllCaps="true"
+            android:textColor="@android:color/background_light"
+            android:textSize="45sp" />
+    </ScrollView>
+
+</RelativeLayout>

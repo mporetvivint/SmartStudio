@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#40c3ff</color>
+    <color name="speedButtonDefault">#d1d1d1</color>
+    <color name="speedOrange">#ff8800</color>
+    <color name="disabledControls">#626161</color>
+    <color name="enabledControls">#FFFFFF</color>
+    <color name="black_overlay">#66000000</color>
+</resources>

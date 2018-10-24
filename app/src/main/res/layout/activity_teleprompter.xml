@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/teleparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    tools:context=".GUI.TeleprompterActivity">
+
+    <WebView
+        android:id="@+id/tally_light"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+    </WebView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/tally_light"
+        android:gravity="center">
+
+        <ScrollView
+            android:id="@+id/script_scroll_container"
+            android:layout_width="768dp"
+            android:layout_height="310dp">
+
+            <TextView
+                android:id="@+id/script_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="#222222"
+                android:breakStrategy="simple"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/test_script"
+                android:textAllCaps="true"
+                android:textColor="@android:color/background_light"
+                android:textSize="45sp" />
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>
