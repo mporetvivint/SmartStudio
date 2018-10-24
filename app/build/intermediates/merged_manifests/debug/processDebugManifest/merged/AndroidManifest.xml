@@ -43,9 +43,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.vivintsolar.SmartStudio.GUI.AddClientActivity"
-            android:screenOrientation="portrait" >
+        <activity android:name="com.vivintsolar.SmartStudio.GUI.AddClientActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 

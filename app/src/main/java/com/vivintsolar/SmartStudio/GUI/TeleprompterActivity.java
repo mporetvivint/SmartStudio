@@ -9,15 +9,14 @@ import android.view.WindowManager;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.vivintsolar.SmartStudio.R;
 
-import Comm.ActivePinger;
-import Comm.Scroller;
-import Model.Script;
+import com.vivintsolar.SmartStudio.Comm.ActivePinger;
+import com.vivintsolar.SmartStudio.Comm.Scroller;
+import com.vivintsolar.SmartStudio.Model.Script;
 
 public class TeleprompterActivity extends AppCompatActivity {
 

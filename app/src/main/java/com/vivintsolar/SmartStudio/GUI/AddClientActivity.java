@@ -13,10 +13,10 @@ import com.vivintsolar.SmartStudio.R;
 
 import java.io.IOException;
 
-import Comm.AndroidWebServer;
-import Comm.getIPAddress;
-import Model.CurrentState;
-import Model.Script;
+import com.vivintsolar.SmartStudio.Comm.AndroidWebServer;
+import com.vivintsolar.SmartStudio.Comm.getIPAddress;
+import com.vivintsolar.SmartStudio.Model.CurrentState;
+import com.vivintsolar.SmartStudio.Model.Script;
 
 public class AddClientActivity extends AppCompatActivity {
 

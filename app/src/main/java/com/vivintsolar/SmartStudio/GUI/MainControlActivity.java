@@ -2,11 +2,9 @@ package com.vivintsolar.SmartStudio.GUI;
 
 import android.annotation.SuppressLint;
 import android.support.v4.content.ContextCompat;
-import android.support.v4.view.GestureDetectorCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewTreeObserver;
@@ -15,14 +13,13 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ScrollView;
-import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.vivintsolar.SmartStudio.R;
 
-import Comm.Scroller;
-import Model.CurrentState;
-import Model.Script;
+import com.vivintsolar.SmartStudio.Comm.Scroller;
+import com.vivintsolar.SmartStudio.Model.CurrentState;
+import com.vivintsolar.SmartStudio.Model.Script;
 
 public class MainControlActivity extends AppCompatActivity {
 

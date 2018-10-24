@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:1-65:12
-INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:1-65:12
-INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:1-65:12
-INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:1-65:12
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:1-64:12
 MERGED from [com.android.support:appcompat-v7:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/0a539ad2be077a0e290057ae493348ff/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/ab24fd3d0d381d1e88887d020ba93ae1/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.gms:play-services-drive:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-drive-15.0.1.aar/d2a11d665b37e374137cb77ddc0f3951/AndroidManifest.xml:17:1-24:12
@@ -38,20 +38,20 @@ MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/mikeporet/.gradle/ca
 MERGED from [com.android.support:interpolator:28.0.0-rc01] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-rc01.aar/4cbf348ffebecaaf26d8b4dcc05f2a74/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/a7eff9480a877134b8d1ec91c42a310d/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f755a17339d3a05bec52ffd155989883/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:1-65:12
-INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:1-65:12
-INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:1-65:12
+INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:1-64:12
 	package
 		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:3:5-42
 		INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:1-65:12
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:1-64:12
 		INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:1-65:12
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:1-64:12
 		INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:2:11-69
@@ -68,7 +68,7 @@ ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/Andro
 	android:name
 		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:7:22-68
 application
-ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:9:5-63:19
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:9:5-62:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/ab24fd3d0d381d1e88887d020ba93ae1/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/ab24fd3d0d381d1e88887d020ba93ae1/AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services-drive:15.0.1] /Users/mikeporet/.gradle/caches/transforms-1/files-1.1/play-services-drive-15.0.1.aar/d2a11d665b37e374137cb77ddc0f3951/AndroidManifest.xml:22:5-20
@@ -130,63 +130,61 @@ ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/Andro
 	android:name
 		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:28:25-66
 activity#com.vivintsolar.SmartStudio.GUI.AddClientActivity
-ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:34:9-49:20
-	android:screenOrientation
-		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:36:13-49
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:34:9-48:20
 	android:name
 		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:35:13-50
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:smartstudio.vivintsolar.com+data:mimeType:text/plain+data:pathPrefix:/script/+data:scheme:http
-ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:37:13-48:29
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:36:13-47:29
 action#android.intent.action.VIEW
-ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:38:17-69
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:37:17-69
 	android:name
-		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:38:25-66
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:37:25-66
 category#android.intent.category.DEFAULT
-ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:40:17-76
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:39:17-76
 	android:name
-		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:40:27-73
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:39:27-73
 category#android.intent.category.BROWSABLE
-ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:41:17-78
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:40:17-78
 	android:name
-		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:41:27-75
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:40:27-75
 data
-ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:43:17-47:53
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:42:17-46:53
 	android:host
-		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:45:21-63
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:44:21-63
 	android:scheme
-		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:44:21-42
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:43:21-42
 	android:mimeType
-		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:46:21-50
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:45:21-50
 	android:pathPrefix
-		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:47:21-50
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:46:21-50
 activity#com.vivintsolar.SmartStudio.GUI.ClientAddress
-ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:50:9-52:53
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:49:9-51:53
 	android:screenOrientation
-		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:52:13-50
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:51:13-50
 	android:name
-		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:51:13-46
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:50:13-46
 activity#com.vivintsolar.SmartStudio.GUI.TallyOnlyActivity
-ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:53:9-58:54
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:52:9-57:54
 	android:screenOrientation
-		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:57:13-50
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:56:13-50
 	android:label
-		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:56:13-62
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:55:13-62
 	android:configChanges
-		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:55:13-74
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:54:13-74
 	android:theme
-		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:58:13-51
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:57:13-51
 	android:name
-		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:54:13-50
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:53:13-50
 activity#com.vivintsolar.SmartStudio.GUI.MainControlActivity
-ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:59:9-61:61
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:58:9-60:61
 	android:screenOrientation
-		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:61:13-49
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:60:13-49
 	android:name
-		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:60:13-52
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:59:13-52
 activity#com.vivintsolar.SmartStudio.GUI.TeleprompterWaitActivity
-ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:62:9-75
+ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:61:9-75
 	android:name
-		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:62:19-63
+		ADDED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml:61:19-63
 uses-sdk
 INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/AndroidManifest.xml

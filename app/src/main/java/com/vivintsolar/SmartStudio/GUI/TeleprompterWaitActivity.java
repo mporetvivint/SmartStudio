@@ -8,8 +8,8 @@ import android.widget.TextView;
 
 import com.vivintsolar.SmartStudio.R;
 
-import Comm.WaitPinger;
-import Model.CurrentState;
+import com.vivintsolar.SmartStudio.Comm.WaitPinger;
+import com.vivintsolar.SmartStudio.Model.CurrentState;
 
 public class TeleprompterWaitActivity extends AppCompatActivity {
 
