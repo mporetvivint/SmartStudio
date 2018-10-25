@@ -188,8 +188,4 @@ public class TeleprompterActivity extends AppCompatActivity {
         TransitionManager.beginDelayedTransition(loading_script_container);
         loading_script_container.setVisibility(View.GONE);
     }
-
-    public void hideUpdateOverlay(){
-        loading_script_container.setAlpha(0.0f);
-    }
 }

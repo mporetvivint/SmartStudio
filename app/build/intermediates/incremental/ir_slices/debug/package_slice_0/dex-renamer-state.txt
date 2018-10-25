@@ -1,4 +1,4 @@
-#Thu Oct 25 14:26:26 MDT 2018
+#Thu Oct 25 16:52:23 MDT 2018
 base.0=/Users/mikeporet/AndroidStudioProjects/SmartStudio/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex
