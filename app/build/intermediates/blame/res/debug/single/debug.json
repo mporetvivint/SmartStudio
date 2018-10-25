@@ -1504,6 +1504,10 @@
         "source": "/Users/mikeporet/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc01.aar/41af56cb2b3188fb7e7a5b6450a55549/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png"
     },
     {
+        "merged": "/Users/mikeporet/AndroidStudioProjects/SmartStudio/app/build/intermediates/res/merged/debug/drawable_caution.png.flat",
+        "source": "/Users/mikeporet/AndroidStudioProjects/SmartStudio/app/src/main/res/drawable/caution.png"
+    },
+    {
         "merged": "/Users/mikeporet/AndroidStudioProjects/SmartStudio/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "/Users/mikeporet/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/0a539ad2be077a0e290057ae493348ff/res/drawable-xhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
     },

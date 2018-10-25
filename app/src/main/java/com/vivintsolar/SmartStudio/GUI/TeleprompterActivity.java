@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.transition.TransitionManager;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
@@ -38,8 +39,10 @@ public class TeleprompterActivity extends AppCompatActivity {
     private Scroller scroller;
     private ActivePinger pinger;
     private RelativeLayout loading_script_container;
-    private ProgressBar progressSpinner;
-    private ImageView updateDoneImage;
+    private RelativeLayout script_failed_container;
+
+    //Fields
+    private String tab_url;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +50,7 @@ public class TeleprompterActivity extends AppCompatActivity {
 
         //Determine which layout we need
         String tally_url = getIntent().getStringExtra("vmix_address");
-        if (tally_url.equals("none")){
+        if (tally_url.equals("none")) {
             //No tally light
             setContentView(R.layout.activity_teleprompter_only);
             //Script
@@ -58,8 +61,7 @@ public class TeleprompterActivity extends AppCompatActivity {
 
             //Loading Script
             loading_script_container = findViewById(R.id.loading_script_container);
-            progressSpinner = findViewById(R.id.update_script_progress);
-            updateDoneImage = findViewById(R.id.update_done_image);
+            script_failed_container = findViewById(R.id.updated_failed_container);
         }
         else{
             //There is a tally light
@@ -86,6 +88,10 @@ public class TeleprompterActivity extends AppCompatActivity {
             script_container.setScaleX(1.78f);
             script_container.setScaleY(1.78f);
 
+            //Loading Script
+            loading_script_container = findViewById(R.id.loading_script_container_tally);
+            script_failed_container = findViewById(R.id.updated_failed_container);
+
         }
 
         //Common Setup to both layouts
@@ -99,11 +105,18 @@ public class TeleprompterActivity extends AppCompatActivity {
         //Get script
         script_view.setText(Script.getScript());
 
-
+        //Setup on touch listener
+        script_failed_container.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TransitionManager.beginDelayedTransition(script_failed_container);
+                script_failed_container.setVisibility(View.INVISIBLE);
+            }
+        });
 
 
         //Set up pinger
-        String tab_url = getIntent().getStringExtra("tab_address");
+        tab_url = getIntent().getStringExtra("tab_address");
         pinger = new ActivePinger(this, tab_url);
 
 
@@ -149,32 +162,30 @@ public class TeleprompterActivity extends AppCompatActivity {
     }
 
     private void updateScript(){
-        //TODO get the animation working to show check mark on completion
-//        progressSpinner.setAlpha(1.0f);
-//        updateDoneImage.setAlpha(0.0f);
-        updateDoneImage.setVisibility(View.INVISIBLE);
-        TransitionManager.beginDelayedTransition((ViewGroup) loading_script_container);
+        TransitionManager.beginDelayedTransition(loading_script_container);
         loading_script_container.setVisibility(View.VISIBLE);
 
-        GetUpdatedScript getUpdatedScript = new GetUpdatedScript("1.1.1.1", new OnEventListener() {
+
+        GetUpdatedScript getUpdatedScript = new GetUpdatedScript(tab_url, new OnEventListener() {
             @Override
             public void onSuccess(Object object) {
                 doneUpdating((String) object);
             }
-        });
+
+            @Override
+            public void onFail(){
+                TransitionManager.beginDelayedTransition(loading_script_container);
+                loading_script_container.setVisibility(View.GONE);
+                TransitionManager.beginDelayedTransition(script_failed_container);
+                script_failed_container.setVisibility(View.VISIBLE);
+            }
+        }, this);
         getUpdatedScript.execute();
     }
 
     public void doneUpdating(String script){
-        updateDoneImage.setVisibility(View.VISIBLE);
-        Script.setScript(script);
-        script_view.setText(script);
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        TransitionManager.beginDelayedTransition((ViewGroup) loading_script_container);
+        script_view.setText(Script.getScript());
+        TransitionManager.beginDelayedTransition(loading_script_container);
         loading_script_container.setVisibility(View.GONE);
     }
 
