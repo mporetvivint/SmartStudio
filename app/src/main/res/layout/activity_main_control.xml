@@ -8,6 +8,12 @@
     android:background="@drawable/smart_studio_portrait"
     tools:context=".GUI.MainControlActivity">
 
+    <Button
+        android:id="@+id/edit_script_button"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="Edit Script" />
+
     <LinearLayout
         android:id="@+id/touch_area_container"
         android:layout_width="match_parent"
@@ -42,7 +48,8 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/speedOrange"
+            android:backgroundTint="@color/speedButtonDefault"
+            android:elevation="2dp"
             android:text="1"
             android:textSize="36sp" />
 
@@ -60,7 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/speedButtonDefault"
+            android:backgroundTint="@color/speedOrange"
             android:text="3"
             android:textSize="36sp" />
 
@@ -94,5 +101,35 @@
             android:textColor="@android:color/background_light"
             android:textSize="45sp" />
     </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/hold_to_edit_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/common_google_signin_btn_text_light_pressed"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/hold_to_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aldrich"
+            android:text="HOLD TO EDIT SCRIPT"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="50dp" />
+
+        <ProgressBar
+            android:id="@+id/edit_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/hold_to_edit"
+            android:indeterminate="false"
+            android:progress="34" />
+    </RelativeLayout>
 
 </RelativeLayout>

@@ -75,4 +75,32 @@
 
     </RelativeLayout>
 
+    <RelativeLayout
+        android:id="@+id/updated_failed_container_tally"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_google_signin_btn_text_light_pressed"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/update_failed_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Failed"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/update_failed_text"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/caution" />
+
+    </RelativeLayout>
+
 </RelativeLayout>

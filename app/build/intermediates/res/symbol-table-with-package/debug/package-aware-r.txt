@@ -715,6 +715,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable nowifi
 drawable pause_icon
 drawable play_icon
 drawable smart_studio_landscape
@@ -793,7 +794,9 @@ id dimensions
 id direct
 id disableHome
 id edit_layout
+id edit_progress
 id edit_query
+id edit_script_button
 id end
 id end_padder
 id expand_activities_button
@@ -806,6 +809,8 @@ id forward_area
 id fullscreen_content_controls
 id gone
 id group_divider
+id hold_to_edit
+id hold_to_edit_container
 id home
 id homeAsUp
 id icon
@@ -834,6 +839,8 @@ id message
 id middle
 id multiply
 id never
+id no_wifi_image
+id no_wifi_image2
 id none
 id normal
 id notification_background
@@ -915,6 +922,7 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textView
 id time
 id title
 id titleDividerNoCustom
@@ -927,6 +935,7 @@ id up
 id update_failed_text
 id update_script_progress
 id updated_failed_container
+id updated_failed_container_tally
 id updating_script_text
 id useLogo
 id vmix_ip
@@ -976,6 +985,7 @@ layout activity_add_client
 layout activity_client_address
 layout activity_main_control
 layout activity_mode_picker
+layout activity_no_wifi
 layout activity_tally_only
 layout activity_teleprompter
 layout activity_teleprompter_only

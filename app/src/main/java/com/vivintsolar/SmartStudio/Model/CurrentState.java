@@ -1,6 +1,9 @@
 package com.vivintsolar.SmartStudio.Model;
 
-public class CurrentState {
+import java.util.Observable;
+import java.util.Observer;
+
+public class CurrentState extends Observable {
 
 
     /*
@@ -30,6 +33,9 @@ public class CurrentState {
     //Stores whether we have synced or not
     private boolean synced;
 
+    //Stores whether the no wifi activity has been dropped
+    private boolean no_wifi_activity_up;
+
     /*
      * If the teleprompter clients get out of sync, the user can push a sync button that
      * will sit this variable to be true. As long as it remains true, we send the "scroll to top"
@@ -45,6 +51,12 @@ public class CurrentState {
         this.scroll_state = 0;
         this.sync_active = false;
         this.teleprompter_active = false;
+        this.no_wifi_activity_up = false;
+    }
+
+
+    public static void putObserver(Observer o) {
+        instance.addObserver(o);
     }
 
     public static int getScroll_state() {
@@ -113,5 +125,15 @@ public class CurrentState {
 
     public static void setSynced(boolean synced) {
         instance.synced = synced;
+    }
+
+    public static boolean isNo_wifi_activity_up() {
+        return instance.no_wifi_activity_up;
+    }
+
+    public static void setNo_wifi_activity_up(boolean no_wifi_activity_up) {
+        instance.no_wifi_activity_up = no_wifi_activity_up;
+        instance.setChanged();
+        instance.notifyObservers();
     }
 }

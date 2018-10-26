@@ -57,7 +57,6 @@ public class ActivePinger {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        Log.d("got_response", response);
                         CurrentState.setScroll_state(Integer.parseInt(response));
                     }
                 }, new Response.ErrorListener() {
@@ -70,7 +69,6 @@ public class ActivePinger {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        Log.d("got_response", response);
                         CurrentState.setMan_scroll(Float.parseFloat(response));
                     }
                 }, new Response.ErrorListener() {

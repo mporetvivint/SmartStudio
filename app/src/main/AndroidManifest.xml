@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
 
     <application
@@ -13,7 +14,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <meta-data android:name="com.google.android.apps.drive.APP_ID" android:value="id=188768208820-55ge4clim5bf33hdd21rt19imhcpcfdo.apps.googleusercontent.com" />
+        <meta-data
+            android:name="com.google.android.apps.drive.APP_ID"
+            android:value="id=188768208820-55ge4clim5bf33hdd21rt19imhcpcfdo.apps.googleusercontent.com" />
+
         <activity
             android:name=".GUI.TeleprompterActivity"
             android:screenOrientation="landscape">
@@ -31,8 +35,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".GUI.AddClientActivity">
+        <activity android:name=".GUI.AddClientActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -40,10 +43,10 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:scheme="http"
                     android:host="smartstudio.vivintsolar.com"
                     android:mimeType="text/plain"
-                    android:pathPrefix="/script/" />
+                    android:pathPrefix="/script/"
+                    android:scheme="http" />
             </intent-filter>
         </activity>
         <activity
@@ -57,8 +60,14 @@
             android:theme="@style/FullscreenTheme" />
         <activity
             android:name=".GUI.MainControlActivity"
-            android:screenOrientation="portrait"></activity>
-        <activity android:name=".GUI.TeleprompterWaitActivity"></activity>
+            android:screenOrientation="portrait" />
+        <activity android:name=".GUI.TeleprompterWaitActivity" />
+        <activity android:name=".GUI.NoWifiActivity"></activity>
+        <receiver android:name="com.vivintsolar.SmartStudio.Comm.WifiStateReciever" >
+            <intent-filter android:priority="100">
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

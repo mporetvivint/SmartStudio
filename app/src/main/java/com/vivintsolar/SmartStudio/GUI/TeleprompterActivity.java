@@ -1,6 +1,11 @@
 package com.vivintsolar.SmartStudio.GUI;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
+import android.net.wifi.WifiInfo;
+import android.net.wifi.WifiManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.transition.TransitionManager;
@@ -43,6 +48,7 @@ public class TeleprompterActivity extends AppCompatActivity {
 
     //Fields
     private String tab_url;
+    private WifiManager wifiManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,8 +68,7 @@ public class TeleprompterActivity extends AppCompatActivity {
             //Loading Script
             loading_script_container = findViewById(R.id.loading_script_container);
             script_failed_container = findViewById(R.id.updated_failed_container);
-        }
-        else{
+        } else {
             //There is a tally light
             setContentView(R.layout.activity_teleprompter);
 
@@ -90,7 +95,7 @@ public class TeleprompterActivity extends AppCompatActivity {
 
             //Loading Script
             loading_script_container = findViewById(R.id.loading_script_container_tally);
-            script_failed_container = findViewById(R.id.updated_failed_container);
+            script_failed_container = findViewById(R.id.updated_failed_container_tally);
 
         }
 
@@ -120,7 +125,6 @@ public class TeleprompterActivity extends AppCompatActivity {
         pinger = new ActivePinger(this, tab_url);
 
 
-
         script_container.getViewTreeObserver().addOnScrollChangedListener(new ViewTreeObserver.OnScrollChangedListener() {
             @Override
             public void onScrollChanged() {
@@ -128,7 +132,6 @@ public class TeleprompterActivity extends AppCompatActivity {
                 Log.d("dynamicScroll", Integer.toString(scrollY));
             }
         });
-
     }
 
     @Override

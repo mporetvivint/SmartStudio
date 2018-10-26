@@ -21,7 +21,6 @@ public class Scroller {
     private Runnable runnable = new Runnable() {
         @Override
         public void run() {
-            Log.d("scrolltest","scrolltest: " + Boolean.toString(scrolling));
             scrollView.smoothScrollBy(0,CurrentState.getScroll_state() * 2);
             if (CurrentState.getScroll_state() != 0) {
                 handler.postDelayed(this, delay);
@@ -31,7 +30,6 @@ public class Scroller {
     public void start(){
 
 
-        Log.d("scrolltest","start scroll");
         scrolling = true;
         handler.postDelayed(runnable, delay);
 
@@ -43,7 +41,6 @@ public class Scroller {
 
         scrolling = false;
 
-        Log.d("scrolltest","stop scroll: " + Boolean.toString(scrolling));
         handler.removeCallbacks(runnable);
     }
 }

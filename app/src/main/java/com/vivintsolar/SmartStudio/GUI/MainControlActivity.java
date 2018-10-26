@@ -1,9 +1,12 @@
 package com.vivintsolar.SmartStudio.GUI;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.os.AsyncTask;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.transition.TransitionManager;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -12,9 +15,12 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import com.vivintsolar.SmartStudio.Comm.OnEventListener;
 import com.vivintsolar.SmartStudio.R;
 
 import com.vivintsolar.SmartStudio.Comm.Scroller;
@@ -26,12 +32,16 @@ public class MainControlActivity extends AppCompatActivity {
     private Button speed_1;
     private Button speed_2;
     private Button speed_3;
+    private Button edit_button;
+    private ProgressBar editProgressBar;
     private ImageButton play_pause;
     private ImageView reverse_area;
     private ImageView foward_area;
     private TextView script;
     private ScrollView script_container;
     private Scroller scroller;
+    private RelativeLayout hold_to_edit;
+    private EditScriptDelay scriptDelay;
 
     private int speed;
     private boolean scrolling;
@@ -44,7 +54,7 @@ public class MainControlActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main_control);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
-        speed = 1;
+        speed = 3;
         scrolling = false;
         fling_process = false;
 
@@ -52,11 +62,14 @@ public class MainControlActivity extends AppCompatActivity {
         speed_1 = findViewById(R.id.speed_1);
         speed_2 = findViewById(R.id.speed_2);
         speed_3 = findViewById(R.id.speed_3);
+        edit_button = findViewById(R.id.edit_script_button);
+        editProgressBar = findViewById(R.id.edit_progress);
         play_pause = findViewById(R.id.play_pause);
         reverse_area = findViewById(R.id.reverse_area);
         foward_area = findViewById(R.id.forward_area);
         script = findViewById(R.id.control_script);
         script_container = findViewById(R.id.control_script_container);
+        hold_to_edit = findViewById(R.id.hold_to_edit_container);
         scroller = new Scroller(script_container);
 
         //Initialize script
@@ -96,6 +109,36 @@ public class MainControlActivity extends AppCompatActivity {
             }
         });
 
+        edit_button.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getAction() & MotionEvent.ACTION_MASK) {
+                    case MotionEvent.ACTION_DOWN:
+                        TransitionManager.beginDelayedTransition(hold_to_edit);
+                        hold_to_edit.setVisibility(View.VISIBLE);
+                        scriptDelay = new EditScriptDelay(new OnEventListener() {
+                            @Override
+                            public void onSuccess(Object object) {
+                                finish();
+                            }
+
+                            @Override
+                            public void onFail() {
+
+                            }
+                        });
+                        scriptDelay.execute();
+                        return true;
+                    case MotionEvent.ACTION_UP:
+                        TransitionManager.beginDelayedTransition(hold_to_edit);
+                        hold_to_edit.setVisibility(View.GONE);
+                        scriptDelay.cancel(true);
+                        return true;
+                }
+                return false;
+            }
+        });
+
         play_pause.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startStopScroll();
@@ -106,7 +149,6 @@ public class MainControlActivity extends AppCompatActivity {
             @Override
             public void onScrollChanged() {
                 int scrollY = script_container.getScrollY(); // For ScrollView
-                Log.d("dynamicScroll", Integer.toString(scrollY));
                 CurrentState.setScroll_position(scrollY);
             }
         });
@@ -179,4 +221,46 @@ public class MainControlActivity extends AppCompatActivity {
         speed_2.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.speedButtonDefault));
         speed_3.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.speedButtonDefault));
     }
+
+    //Delay for script edit
+    private class EditScriptDelay extends AsyncTask<Void, Integer, Void> {
+
+
+        private OnEventListener<String> callBack;
+
+        public EditScriptDelay(OnEventListener callBack) {
+            this.callBack = callBack;
+        }
+
+        @Override
+        protected void onPostExecute(Void s) {
+            if(callBack != null){
+                callBack.onSuccess("success");
+            }
+        }
+
+        @Override
+        protected void onProgressUpdate(Integer... values) {
+            super.onProgressUpdate(values[0]);
+            editProgressBar.setProgress(values[0]);
+        }
+
+        @Override
+        protected Void doInBackground(Void... a) {
+            for (int i = 0; i < 100; i++){
+                if(isCancelled()){
+                    return null;
+                }
+                publishProgress(i);
+                try {
+                    Thread.sleep(10);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+            return null;
+        }
+
+    }
+
 }
