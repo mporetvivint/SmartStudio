@@ -2,13 +2,13 @@
 <instant-run
     abi="arm64-v8a,armeabi-v7a,armeabi"
     api-level="24"
-    build-mode="COLD"
+    build-mode="FULL"
     density="mdpi"
     format="10"
     plugin-version="3.2.1"
-    timestamp="1540594087144"
+    timestamp="1541004087940"
     token="3400356445925781264"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
@@ -24,12 +24,45 @@
         duration="0" />
 
     <artifact
+        location="/Users/mikeporet/AndroidStudioProjects/SmartStudio/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/mikeporet/AndroidStudioProjects/SmartStudio/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/mikeporet/AndroidStudioProjects/SmartStudio/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/mikeporet/AndroidStudioProjects/SmartStudio/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/mikeporet/AndroidStudioProjects/SmartStudio/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/mikeporet/AndroidStudioProjects/SmartStudio/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/mikeporet/AndroidStudioProjects/SmartStudio/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/mikeporet/AndroidStudioProjects/SmartStudio/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/mikeporet/AndroidStudioProjects/SmartStudio/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/mikeporet/AndroidStudioProjects/SmartStudio/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/mikeporet/AndroidStudioProjects/SmartStudio/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+        type="SPLIT" />
+    <artifact
         location="/Users/mikeporet/AndroidStudioProjects/SmartStudio/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1540593691962"
+        timestamp="1541004087940"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/mikeporet/AndroidStudioProjects/SmartStudio/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
@@ -64,23 +97,6 @@
         <artifact
             location="/Users/mikeporet/AndroidStudioProjects/SmartStudio/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
-        <artifact
-            location="/Users/mikeporet/AndroidStudioProjects/SmartStudio/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1540593881945"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/mikeporet/AndroidStudioProjects/SmartStudio/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1540594087144"
-        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/mikeporet/AndroidStudioProjects/SmartStudio/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
             type="SPLIT_MAIN" />

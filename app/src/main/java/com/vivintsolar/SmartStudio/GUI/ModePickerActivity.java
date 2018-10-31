@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.vivintsolar.SmartStudio.Model.CurrentState;
 import com.vivintsolar.SmartStudio.R;
 
 public class ModePickerActivity extends AppCompatActivity {
@@ -20,6 +21,8 @@ public class ModePickerActivity extends AppCompatActivity {
 
         controlMode = findViewById(R.id.control_mode);
         teleprompterMode = findViewById(R.id.teleprompter_mode);
+
+        CurrentState.setApp_open(true);
 
 
         controlMode.setOnClickListener(new View.OnClickListener() {

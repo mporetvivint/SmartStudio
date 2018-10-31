@@ -36,6 +36,9 @@ public class CurrentState extends Observable {
     //Stores whether the no wifi activity has been dropped
     private boolean no_wifi_activity_up;
 
+    //Stores if the app has been opened (To prevent no-wifi from coming up when you haven't opened the app)
+    private boolean app_open;
+
     /*
      * If the teleprompter clients get out of sync, the user can push a sync button that
      * will sit this variable to be true. As long as it remains true, we send the "scroll to top"
@@ -52,8 +55,16 @@ public class CurrentState extends Observable {
         this.sync_active = false;
         this.teleprompter_active = false;
         this.no_wifi_activity_up = false;
+        this.app_open = false;
     }
 
+    public static void setApp_open(boolean app_open) {
+        instance.app_open = app_open;
+    }
+
+    public static boolean isApp_open() {
+        return instance.app_open;
+    }
 
     public static void putObserver(Observer o) {
         instance.addObserver(o);
