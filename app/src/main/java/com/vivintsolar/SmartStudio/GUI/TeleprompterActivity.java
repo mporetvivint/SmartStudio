@@ -54,6 +54,10 @@ public class TeleprompterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        //Factor to scale script to fill screen
+        float scaleX = 1.78f;
+        float scaleY = 1.78f;
+
         //Determine which layout we need
         String tally_url = getIntent().getStringExtra("vmix_address");
         if (tally_url.equals("none")) {
@@ -62,8 +66,8 @@ public class TeleprompterActivity extends AppCompatActivity {
             //Script
             script_container = findViewById(R.id.prompter_only_scroll_container);
             script_view = findViewById(R.id.prompter_only_script_container);
-            script_container.setScaleX(1.78f);
-            script_container.setScaleY(1.78f);
+            script_container.setScaleX(scaleX);
+            script_container.setScaleY(scaleY);
 
             //Loading Script
             loading_script_container = findViewById(R.id.loading_script_container);
@@ -90,8 +94,8 @@ public class TeleprompterActivity extends AppCompatActivity {
             //Script
             script_container = findViewById(R.id.script_scroll_container);
             script_view = findViewById(R.id.script_container);
-            script_container.setScaleX(1.78f);
-            script_container.setScaleY(1.78f);
+            script_container.setScaleX(scaleX);
+            script_container.setScaleY(scaleY);
 
             //Loading Script
             loading_script_container = findViewById(R.id.loading_script_container_tally);
@@ -132,6 +136,8 @@ public class TeleprompterActivity extends AppCompatActivity {
                 Log.d("dynamicScroll", Integer.toString(scrollY));
             }
         });
+
+
     }
 
     @Override
@@ -149,14 +155,14 @@ public class TeleprompterActivity extends AppCompatActivity {
         int action = event.getAction();
         int keyCode = event.getKeyCode();
         switch (keyCode) {
-            case KeyEvent.KEYCODE_VOLUME_UP:
+            case KeyEvent.KEYCODE_VOLUME_UP://Update Script
                 if (action == KeyEvent.ACTION_DOWN) {
                     updateScript();
                 }
                 return true;
-            case KeyEvent.KEYCODE_VOLUME_DOWN:
+            case KeyEvent.KEYCODE_VOLUME_DOWN://Mirror Script
                 if (action == KeyEvent.ACTION_DOWN) {
-                    updateScript();
+                    script_container.setScaleX(-script_container.getScaleX());
                 }
                 return true;
             default:

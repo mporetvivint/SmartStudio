@@ -54,6 +54,7 @@ public class ClientAddress extends AppCompatActivity {
         tally_checkbox = findViewById(R.id.tally_cheeck);
         prompter_checkbox = findViewById(R.id.prompter_check);
 
+
         start_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
@@ -83,8 +84,8 @@ public class ClientAddress extends AppCompatActivity {
                     String tab_port = ClientAddress.this.tab_port.getText().toString();
 
                     Intent intent = new Intent(v.getContext(), TeleprompterWaitActivity.class);
-                    intent.putExtra("vmix_address", "none");
                     intent.putExtra("tab_address", tab_ip_address + ":" + tab_port);
+                    intent.putExtra("vmix_address", "none");
                     startActivity(intent);
                 }
                 else {
