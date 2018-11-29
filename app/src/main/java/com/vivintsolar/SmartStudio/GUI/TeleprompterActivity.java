@@ -49,14 +49,17 @@ public class TeleprompterActivity extends AppCompatActivity {
     //Fields
     private String tab_url;
     private WifiManager wifiManager;
+    private boolean mirrored;
+    //Factor to scale script to fill screen
+    float scaleX = 1.78f;
+    float scaleY = 1.78f;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //Factor to scale script to fill screen
-        float scaleX = 1.78f;
-        float scaleY = 1.78f;
+
+        mirrored = false;
 
         //Determine which layout we need
         String tally_url = getIntent().getStringExtra("vmix_address");
@@ -162,7 +165,17 @@ public class TeleprompterActivity extends AppCompatActivity {
                 return true;
             case KeyEvent.KEYCODE_VOLUME_DOWN://Mirror Script
                 if (action == KeyEvent.ACTION_DOWN) {
-                    script_container.setScaleX(-script_container.getScaleX());
+                    if (mirrored){
+                        script_container.setScaleX(scaleX);
+                        script_container.setScaleY(scaleY);
+                        mirrored = false;
+                    }
+                    else{
+                        script_container.setScaleX(-1.4f);
+                        script_container.setScaleY(1.4f);
+                        mirrored = true;
+                    }
+
                 }
                 return true;
             default:
