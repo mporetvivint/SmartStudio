@@ -10,8 +10,8 @@
 
     <ScrollView
         android:id="@+id/prompter_only_scroll_container"
-        android:layout_width="768dp"
-        android:layout_height="392dp"
+        android:layout_width="800dp"
+        android:layout_height="384dp"
         android:layout_centerInParent="true">
 
         <TextView
@@ -22,7 +22,7 @@
             android:layout_centerHorizontal="true"
             android:background="#222222"
             android:breakStrategy="simple"
-            android:lineSpacingExtra="5sp"
+            android:lineSpacingExtra="5px"
             android:text="@string/test_script"
             android:textAllCaps="true"
             android:textColor="@android:color/background_light"

@@ -3,10 +3,11 @@ package com.vivintsolar.SmartStudio.GUI;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.transition.TransitionManager;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -21,6 +22,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.vivintsolar.SmartStudio.Comm.OnEventListener;
+import com.vivintsolar.SmartStudio.Comm.getIPAddress;
 import com.vivintsolar.SmartStudio.R;
 
 import com.vivintsolar.SmartStudio.Comm.Scroller;
@@ -38,6 +40,7 @@ public class MainControlActivity extends AppCompatActivity {
     private ImageView reverse_area;
     private ImageView foward_area;
     private TextView script;
+    private TextView ip_display;
     private ScrollView script_container;
     private Scroller scroller;
     private RelativeLayout hold_to_edit;
@@ -71,9 +74,19 @@ public class MainControlActivity extends AppCompatActivity {
         script_container = findViewById(R.id.control_script_container);
         hold_to_edit = findViewById(R.id.hold_to_edit_container);
         scroller = new Scroller(script_container);
+        ip_display = findViewById(R.id.ip_address);
+
+        //Get IP Address
+        getIPAddress ip_getter = new getIPAddress(ip_display);
+        ip_getter.execute();
 
         //Initialize script
         script.setText(Script.getScript());
+
+        //set script window size
+        DisplayMetrics metrics = getResources().getDisplayMetrics();
+        float density  = metrics.density;
+        Script.setWindow_size((int) (metrics.widthPixels/density), 384);
 
         //Set onclick listeners
         speed_1.setOnClickListener(new View.OnClickListener() {

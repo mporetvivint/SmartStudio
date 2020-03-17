@@ -86,7 +86,7 @@ public class AndroidWebServer extends NanoHTTPD {
             return newFixedLengthResponse(Boolean.toString(CurrentState.isTeleprompter_active()));
         }
         else if(uri.equals("/script")){
-            return newFixedLengthResponse(Script.getScript());
+            return newFixedLengthResponse(Script.getWindow_size() + Script.getScript());
         }
         else if(uri.equals("/ping")){
             return newFixedLengthResponse("Ping back atcha");

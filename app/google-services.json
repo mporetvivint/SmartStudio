@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "418070773921",
+    "firebase_url": "https://smartstudio-a0005.firebaseio.com",
+    "project_id": "smartstudio-a0005",
+    "storage_bucket": "smartstudio-a0005.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418070773921:android:a7ba06d07625fef193b0e0",
+        "android_client_info": {
+          "package_name": "com.vivintsolar.SmartStudio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "418070773921-n54l6dn5fk75cottfev2eg380ie51235.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC10OjpsxInWImogUmo7KdM1HDWZhVe3YI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "418070773921-n54l6dn5fk75cottfev2eg380ie51235.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

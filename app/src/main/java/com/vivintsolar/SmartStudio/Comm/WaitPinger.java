@@ -58,11 +58,12 @@ public class WaitPinger {
                     //Start Teleprompter activity
                     if (!activity_started) {
                         activity_started = true;
-                        Log.d("activity_start", "starting teleprompter");
+                        Log.d("activity_start", "got response starting teleprompter");
                         activity.startTeleprompter();
                     }
                 }else {
                     handler.postDelayed(this, delay);
+                    Log.d("activity_start", "no response - waiting");
                 }
             }
         }, delay);
@@ -94,6 +95,33 @@ public class WaitPinger {
                     @Override
                     public void onResponse(String response) {
                         Log.d("got_response", response);
+                        //Parse Response
+                        int i = 0;
+                        boolean searching_width = true;
+                        boolean searching_height = true;
+                        StringBuilder width = new StringBuilder();
+                        StringBuilder height = new StringBuilder();
+                        char current;
+                        while(searching_width){
+                            current = response.charAt(i++);
+                            if(current == '\t'){
+                                searching_width = false;
+                            }
+                            else{
+                                width.append(current);
+                            }
+                        }
+                        while(searching_height){
+                            current = response.charAt(i++);
+                            if(current == '\t'){
+                                searching_height = false;
+                            }
+                            else{
+                                height.append(current);
+                            }
+                        }
+                        response = response.substring(i);
+                        Script.setWindow_size(Integer.parseInt(width.toString()), Integer.parseInt(height.toString()));
                         Script.setScript(response);
                     }
                 }, new Response.ErrorListener() {

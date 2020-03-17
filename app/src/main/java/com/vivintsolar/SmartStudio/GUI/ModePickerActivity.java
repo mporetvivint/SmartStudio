@@ -1,7 +1,7 @@
 package com.vivintsolar.SmartStudio.GUI;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -35,9 +35,10 @@ public class ModePickerActivity extends AppCompatActivity {
 
         teleprompterMode.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), ClientAddress.class);
+//                Intent intent = new Intent(v.getContext(), ClientAddress.class);
+//                startActivity(intent);
+                Intent intent = new Intent(v.getContext(),BarcodeCaptureActivity.class);
                 startActivity(intent);
-
             }
         });
     }

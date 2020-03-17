@@ -5,7 +5,7 @@
     android:id="@+id/teleparent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_bright"
+    android:background="@color/black_overlay"
     tools:context=".GUI.TeleprompterActivity">
 
     <WebView
@@ -20,8 +20,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
         android:layout_below="@id/tally_light"
+        android:layout_alignParentBottom="true"
         android:gravity="center">
 
         <ScrollView
@@ -33,8 +33,8 @@
                 android:id="@+id/script_container"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
                 android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
                 android:background="#222222"
                 android:breakStrategy="simple"
                 android:lineSpacingExtra="5sp"

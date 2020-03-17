@@ -2,7 +2,7 @@ package com.vivintsolar.SmartStudio.GUI;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -56,7 +56,8 @@ public class AddClientActivity extends AppCompatActivity {
         //Set button click listener
         save_script_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                String newScript = script_container.getText().toString().replaceAll("\n\n","\n");
+                String newScript = script_container.getText().toString();
+//                newScript = newScript.replaceAll("\n\n","\n");
                 Script.setScript(newScript + "\n\n\n");
                 CurrentState.setScroll_state(0);
                 CurrentState.setTeleprompter_active(true);

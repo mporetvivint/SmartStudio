@@ -32,7 +32,7 @@ public class ActivePinger {
 
     public void start(){
         final Handler handler = new Handler();
-        final int delay = 33; //milliseconds
+        final int delay = 50; //milliseconds
 
         initializeComm();
 

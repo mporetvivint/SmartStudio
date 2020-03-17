@@ -6,9 +6,10 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.transition.TransitionManager;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
@@ -60,6 +61,13 @@ public class TeleprompterActivity extends AppCompatActivity {
 
 
         mirrored = false;
+
+        //determine script size to fit screen
+        DisplayMetrics metrics = getResources().getDisplayMetrics();
+        float density  = metrics.density;
+        int scriptwidth = Script.getWidth();
+        scaleX = (metrics.widthPixels/density) / (float) Script.getWidth();
+        scaleY = scaleX;
 
         //Determine which layout we need
         String tally_url = getIntent().getStringExtra("vmix_address");
@@ -116,6 +124,10 @@ public class TeleprompterActivity extends AppCompatActivity {
 
         //Get script
         script_view.setText(Script.getScript());
+
+        //Script window size
+        script_container.setMinimumWidth(Script.getWidth());
+        script_container.setMinimumHeight(Script.getHeight());
 
         //Setup on touch listener
         script_failed_container.setOnClickListener(new View.OnClickListener() {
