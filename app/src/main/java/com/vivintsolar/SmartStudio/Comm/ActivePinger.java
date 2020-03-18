@@ -47,9 +47,9 @@ public class ActivePinger {
     }
 
     private void initializeComm(){
-        String state_url = "http://" + url + "/scroll";
-        String manscroll_url = "http://" + url + "/manscroll";
-        String sync_position_url = "http://" + url + "/syncposition";
+        String state_url = url + "/scroll";
+        String manscroll_url = url + "/manscroll";
+        String sync_position_url = url + "/syncposition";
         // Instantiate the RequestQueue.
         queue = Volley.newRequestQueue(activity.getApplicationContext());
         // Request a string response from the provided URL.

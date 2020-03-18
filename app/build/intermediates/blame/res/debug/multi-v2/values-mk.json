@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mikeporet/AndroidStudioProjects/SmartStudio/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mk/values-mk.xml",
+            "outputFile": "/Users/mikeporet/StudioProjects/SmartStudio/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mk/values-mk.xml",
             "map": [
                 {
                     "source": "/Users/mikeporet/.gradle/caches/transforms-2/files-2.1/38b6c4b545e39be84f8fef63d737cf6b/jetified-play-services-base-17.0.0/res/values-mk/values.xml",

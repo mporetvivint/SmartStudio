@@ -1,7 +1,7 @@
-#Mon Mar 16 19:34:55 MDT 2020
-base.0=/Users/mikeporet/AndroidStudioProjects/SmartStudio/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
+#Wed Mar 18 14:18:47 MDT 2020
+base.0=/Users/mikeporet/StudioProjects/SmartStudio/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=/Users/mikeporet/AndroidStudioProjects/SmartStudio/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex
+base.1=/Users/mikeporet/StudioProjects/SmartStudio/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex

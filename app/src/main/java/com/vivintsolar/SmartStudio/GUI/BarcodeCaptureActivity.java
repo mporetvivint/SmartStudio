@@ -7,6 +7,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.hardware.Camera;
 import android.os.Build;
@@ -14,8 +15,13 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
+import android.widget.Switch;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
@@ -44,11 +50,15 @@ public final class BarcodeCaptureActivity extends AppCompatActivity{
     // constants used to pass extra data in the intent
     public static final String AutoFocus = "AutoFocus";
     public static final String UseFlash = "UseFlash";
-    public static final String BarcodeObject = "Barcode";
 
     private CameraSource mCameraSource;
     private CameraSourcePreview mPreview;
 
+    //UI Components
+    private Switch sw_teleprompter;
+    private Switch sw_tally_light;
+    private TextView vmix_ip;
+    private Button start_button;
 
     /**
      * Initializes the UI and creates the detector pipeline.
@@ -72,10 +82,50 @@ public final class BarcodeCaptureActivity extends AppCompatActivity{
             requestCameraPermission();
         }
 
-//        Snackbar.make(mGraphicOverlay, "Tap to capture. Pinch/Stretch to zoom",
-//                Snackbar.LENGTH_LONG)
-//                .show();
+        //Setup UI
+        sw_teleprompter = findViewById(R.id.sw_teleprompter);
+        sw_tally_light = findViewById(R.id.sw_tally);
+        vmix_ip = findViewById(R.id.vmix_address);
+        start_button = findViewById(R.id.start_tally_button);
+
+        sw_teleprompter.setOnClickListener(view -> {
+            if(sw_teleprompter.isChecked()){
+                sw_teleprompter.getThumbDrawable().setTint(getColor(R.color.colorAccent));
+            }else{
+                sw_teleprompter.getThumbDrawable().setTint(getColor(R.color.disabledControls));
+            }
+            show_button();
+        });
+
+        sw_tally_light.setOnClickListener(view -> {
+            if(sw_tally_light.isChecked()){
+                sw_tally_light.getThumbDrawable().setTint(getColor(R.color.colorAccent));
+                vmix_ip.setVisibility(View.VISIBLE);
+            }else{
+                sw_tally_light.getThumbDrawable().setTint(getColor(R.color.disabledControls));
+                vmix_ip.setVisibility(View.INVISIBLE);
+            }
+            show_button();
+        });
+
+        start_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startTeleprompterActivity("");
+            }
+        });
+
     }
+
+    private void show_button(){
+        if(!sw_teleprompter.isChecked() && sw_tally_light.isChecked()){
+            start_button.setVisibility(View.VISIBLE);
+        }
+        else{
+            start_button.setVisibility(View.INVISIBLE);
+        }
+    }
+
 
     /**
      * Handles the requesting of the camera permission.  This includes
@@ -176,6 +226,7 @@ public final class BarcodeCaptureActivity extends AppCompatActivity{
     protected void onResume() {
         super.onResume();
         startCameraSource();
+        mPreview.setScaling();
     }
 
     /**
@@ -286,7 +337,39 @@ public final class BarcodeCaptureActivity extends AppCompatActivity{
                 String title = barcode.getUrl().getTitle();
                 String url = barcode.getUrl().getUrl();
                 Log.d("B-Code", url);
+
+                startTeleprompterActivity(url);
             }
+    }
+
+    private void startTeleprompterActivity(String controller_ip_address){
+        boolean tally_light = sw_tally_light.isChecked();
+        boolean teleprompter = sw_teleprompter.isChecked();
+        if(tally_light && teleprompter) {
+            String vmix_ip_address = vmix_ip.getText().toString();
+
+            Intent intent = new Intent(this, TeleprompterWaitActivity.class);
+            intent.putExtra("vmix_address", vmix_ip_address);
+            intent.putExtra("tab_address", controller_ip_address);
+            startActivity(intent);
+        }
+        else if (tally_light){
+            String vmix_ip_address = vmix_ip.getText().toString();
+
+            Intent intent = new Intent(this, TallyOnlyActivity.class);
+            intent.putExtra("address",vmix_ip_address);
+            startActivity(intent);
+        }
+        else if (teleprompter){
+            Intent intent = new Intent(this, TeleprompterWaitActivity.class);
+            intent.putExtra("tab_address", controller_ip_address);
+            intent.putExtra("vmix_address", "none");
+            startActivity(intent);
+        }
+        else {
+            Toast error_toast = Toast.makeText(this,"Please choose something for me to do! I can't do nothing!", Toast.LENGTH_LONG);
+            error_toast.show();
+        }
     }
 
 

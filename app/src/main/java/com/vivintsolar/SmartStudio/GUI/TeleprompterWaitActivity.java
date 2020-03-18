@@ -24,7 +24,7 @@ public class TeleprompterWaitActivity extends AppCompatActivity {
 
         waitLabel = findViewById(R.id.waiting_label);
 
-        CurrentState.setScroll_state(60);
+        CurrentState.setScroll_state(61);
 
         //Start WaitPinger
         String url = getIntent().getStringExtra("tab_address");
@@ -42,7 +42,7 @@ public class TeleprompterWaitActivity extends AppCompatActivity {
         super.onResume();
         waitPinger.setActivity_started(false);
         waitPinger.start();
-        waitLabel.setText("WAITING FOR CONTROLLER");
+        waitLabel.setText("Connecting to Controller");
     }
 
     public void startTeleprompter(){
@@ -54,5 +54,9 @@ public class TeleprompterWaitActivity extends AppCompatActivity {
         intent.putExtra("tab_address",tab_url);
         intent.putExtra("vmix_address", vmix_url);
         startActivity(intent);
+    }
+
+    public void setConnected(){
+        waitLabel.setText("Ready");
     }
 }

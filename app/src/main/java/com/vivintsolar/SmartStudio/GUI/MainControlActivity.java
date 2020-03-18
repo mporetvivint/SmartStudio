@@ -2,6 +2,7 @@ package com.vivintsolar.SmartStudio.GUI;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.AsyncTask;
 import androidx.core.content.ContextCompat;
 import androidx.appcompat.app.AppCompatActivity;
@@ -39,8 +40,8 @@ public class MainControlActivity extends AppCompatActivity {
     private ImageButton play_pause;
     private ImageView reverse_area;
     private ImageView foward_area;
+    private ImageView qr_display;
     private TextView script;
-    private TextView ip_display;
     private ScrollView script_container;
     private Scroller scroller;
     private RelativeLayout hold_to_edit;
@@ -74,11 +75,7 @@ public class MainControlActivity extends AppCompatActivity {
         script_container = findViewById(R.id.control_script_container);
         hold_to_edit = findViewById(R.id.hold_to_edit_container);
         scroller = new Scroller(script_container);
-        ip_display = findViewById(R.id.ip_address);
-
-        //Get IP Address
-        getIPAddress ip_getter = new getIPAddress(ip_display);
-        ip_getter.execute();
+        qr_display = findViewById(R.id.mn_cntrl_qr);
 
         //Initialize script
         script.setText(Script.getScript());
@@ -273,6 +270,22 @@ public class MainControlActivity extends AppCompatActivity {
             }
             return null;
         }
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        //Get IP Address
+        getIPAddress ip_getter = new getIPAddress(this){
+            @Override
+            public void onCompletion(Bitmap s){
+                if(s != null) {
+                    qr_display.setImageBitmap(s);
+                }
+            }
+        };
+        ip_getter.execute();
 
     }
 

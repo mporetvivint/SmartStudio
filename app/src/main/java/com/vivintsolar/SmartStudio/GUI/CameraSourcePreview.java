@@ -49,6 +49,8 @@ public class CameraSourcePreview extends ViewGroup {
         mSurfaceView = new SurfaceView(context);
         mSurfaceView.getHolder().addCallback(new SurfaceCallback());
         addView(mSurfaceView);
+
+
     }
 
     @RequiresPermission(Manifest.permission.CAMERA)
@@ -167,5 +169,14 @@ public class CameraSourcePreview extends ViewGroup {
 
         Log.d(TAG, "isPortraitMode returning false by default");
         return false;
+    }
+
+    public void setScaling(){
+        //Fill camera preview
+        int width = getWidth();
+        int height = getHeight();
+        int surfaceWidth = mSurfaceView.getWidth();
+        mSurfaceView.setScaleX(2);
+//        mSurfaceView.setX((width-mSurfaceView.getWidth())/2.0f);
     }
 }

@@ -12,7 +12,8 @@ public class CurrentState extends Observable {
     * 1-3 --> Forward (various speeds, 1 is default speed)
     * -1 - -3 --> Reverse (various speeds)
     * 50 --> sync
-    * 60 --> inactive
+    * 60 --> inactive - Connected
+    * 61 --> inactive - not connected (Client only)
     * 70 --> Fling Up
     * 80 --> Fling Down
     */
@@ -26,6 +27,9 @@ public class CurrentState extends Observable {
 
     //Variable to hold sync scroll position
     private int scroll_position;
+
+    //Variable to hold port number;
+    private int port_number;
 
     //Address to fetch sync position from
     private String sync_ip;
@@ -52,6 +56,7 @@ public class CurrentState extends Observable {
 
     private CurrentState() {
         this.scroll_state = 0;
+        this.port_number = 0;
         this.sync_active = false;
         this.teleprompter_active = false;
         this.no_wifi_activity_up = false;
@@ -104,6 +109,18 @@ public class CurrentState extends Observable {
 
     public static void setMan_scroll(float man_scroll) {
         instance.man_scroll = man_scroll;
+    }
+
+    public static int getPort_number() {
+        return instance.port_number;
+    }
+
+    public static void setPort_number(int port_number) {
+        instance.port_number = port_number;
+    }
+
+    public static void increment_port(){
+        instance.port_number++;
     }
 
     public static boolean isFling_wait() {

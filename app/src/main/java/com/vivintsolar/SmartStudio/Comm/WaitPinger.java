@@ -44,7 +44,11 @@ public class WaitPinger {
             public void run() {
                 updateScrollState();
                 int state = CurrentState.getScroll_state();
-                if(state != 60) {
+                if(state == 60){
+                    activity.setConnected();
+                    handler.postDelayed(this, delay);
+                }
+                else if(state != 61) {
                     //Get script
                     getScript();
                     CurrentState.setTeleprompter_active(true);
@@ -73,8 +77,8 @@ public class WaitPinger {
     private void initializeComm(){
         queue =  Volley.newRequestQueue(activity.getApplicationContext());
 
-        String statusURL = "http://" + url + "/scroll";
-        String scriptURL = "http://" + url + "/script";
+        String statusURL = url + "/scroll";
+        String scriptURL = url + "/script";
 
         statusRequest = new StringRequest(Request.Method.GET, statusURL,
                 new Response.Listener<String>() {

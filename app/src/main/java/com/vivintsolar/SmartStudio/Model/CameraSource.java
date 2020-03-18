@@ -1232,7 +1232,7 @@ public class CameraSource {
                                     // ...
                                     if(barcodes.size()>0) {
                                         mActivity.barcodeDetectedCallback(barcodes.get(0));
-
+                                        Log.d("B-Code", "Read a B-code");
                                     }
                                 }
                             })

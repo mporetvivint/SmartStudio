@@ -5,4 +5,7 @@
     <string name="title_activity_tally_only">TallyOnlyActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="scan_barcode_prompt">Scan the controller to begin</string>
+    <string name="enter_vmix_address">Enter vMix Address</string>
+
 </resources>
