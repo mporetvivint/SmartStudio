@@ -19,28 +19,44 @@ import java.lang.ref.WeakReference;
 
 import static android.content.Context.WIFI_SERVICE;
 
+/*
+* Class that provides a QR code with the device IP address, to be used for device pairing
+*/
+
 public abstract class getIPAddress extends AsyncTask<Void,Void,Bitmap> {
 
+    //Context is needed to obtain the IP
     private WeakReference<Context> context;
+
     public getIPAddress(Context context) {
         this.context = new WeakReference<>(context);
     }
 
+    //After execution the bitmap image is returned via an abstract function in the calling class
     @Override
     protected void onPostExecute(Bitmap m) {
         onCompletion(m);
     }
 
+    //Background task to get IP Address and generate QR code bitmap
     @Override
     protected Bitmap doInBackground(Void... addClientActivities) {
 
-        WifiManager wm = (WifiManager) context.get().getApplicationContext().getSystemService(WIFI_SERVICE);
-        String s = "http://" + Formatter.formatIpAddress(wm.getConnectionInfo().getIpAddress()) + ":" + CurrentState.getPort_number();
-        return generateQR(s);
+        WifiManager wm;
+        wm = (WifiManager) context.get().getApplicationContext().getSystemService(WIFI_SERVICE);
+
+        String address;
+        address = "http://" + Formatter.formatIpAddress(wm.getConnectionInfo().getIpAddress()) + ":" + CurrentState.getPort_number();
+        return generateQR(address);
     }
 
+    //Abstract method to return QR code bitmap to calling class
     public abstract void onCompletion(Bitmap m);
 
+    /*QR Code Generator
+    *@Param: String containing IP address
+    * @Return: Bitmap of QR code containing the IP address
+     */
     private Bitmap generateQR(String s){
         QRCodeWriter writer = new QRCodeWriter();
         try {
