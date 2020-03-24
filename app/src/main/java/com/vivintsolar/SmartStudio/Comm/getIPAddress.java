@@ -41,13 +41,17 @@ public abstract class getIPAddress extends AsyncTask<Void,Void,Bitmap> {
     //Background task to get IP Address and generate QR code bitmap
     @Override
     protected Bitmap doInBackground(Void... addClientActivities) {
+        String current_ip = CurrentState.getIp_address();
+        if(current_ip == null || current_ip == "") {
 
-        WifiManager wm;
-        wm = (WifiManager) context.get().getApplicationContext().getSystemService(WIFI_SERVICE);
+            WifiManager wm;
+            wm = (WifiManager) context.get().getApplicationContext().getSystemService(WIFI_SERVICE);
 
-        String address;
-        address = "http://" + Formatter.formatIpAddress(wm.getConnectionInfo().getIpAddress()) + ":" + CurrentState.getPort_number();
-        return generateQR(address);
+            String address;
+            address = "http://" + Formatter.formatIpAddress(wm.getConnectionInfo().getIpAddress()) + ":" + 8080;
+            CurrentState.setIp_address(address);
+        }
+        return generateQR(CurrentState.getIp_address());
     }
 
     //Abstract method to return QR code bitmap to calling class

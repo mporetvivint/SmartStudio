@@ -42,6 +42,7 @@ public class MainControlActivity extends AppCompatActivity {
     private ImageView foward_area;
     private ImageView qr_display;
     private TextView script;
+    private TextView ip_text_view;
     private ScrollView script_container;
     private Scroller scroller;
     private RelativeLayout hold_to_edit;
@@ -76,6 +77,7 @@ public class MainControlActivity extends AppCompatActivity {
         hold_to_edit = findViewById(R.id.hold_to_edit_container);
         scroller = new Scroller(script_container);
         qr_display = findViewById(R.id.mn_cntrl_qr);
+        ip_text_view = findViewById(R.id.ip_text_main_cntrl);
 
         //Initialize script
         script.setText(Script.getScript());
@@ -193,6 +195,15 @@ public class MainControlActivity extends AppCompatActivity {
                         break;
                 }
                 return true;
+            }
+        });
+
+        //Display IP address if needed
+        qr_display.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ip_text_view.setText(CurrentState.getIp_address());
+                ip_text_view.setVisibility(View.VISIBLE);
             }
         });
 

@@ -7,6 +7,7 @@ import android.net.Uri;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -32,6 +33,7 @@ public class AddClientActivity extends AppCompatActivity {
     EditText script_container;
     Button save_script_button;
     ImageView qr_view;
+    TextView ip_text_View;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +43,7 @@ public class AddClientActivity extends AppCompatActivity {
         script_container = findViewById(R.id.script_text);
         save_script_button = findViewById(R.id.save_script_button);
         qr_view = findViewById(R.id.qr_display);
-
+        ip_text_View = findViewById(R.id.ip_text);
 
 
 
@@ -71,6 +73,15 @@ public class AddClientActivity extends AppCompatActivity {
                 CurrentState.setTeleprompter_active(true);
                 Intent intent = new Intent(v.getContext(), MainControlActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        //Display IP address if needed
+        qr_view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ip_text_View.setText(CurrentState.getIp_address());
+                ip_text_View.setVisibility(View.VISIBLE);
             }
         });
 

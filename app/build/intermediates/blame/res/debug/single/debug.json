@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/mikeporet/StudioProjects/SmartStudio/app/build/intermediates/res/merged/debug/drawable_pause_icon.png.flat",
-        "source": "/Users/mikeporet/StudioProjects/SmartStudio/app/src/main/res/drawable/pause_icon.png"
-    },
-    {
         "merged": "/Users/mikeporet/StudioProjects/SmartStudio/app/build/intermediates/res/merged/debug/drawable_general_background_portrait.jpg.flat",
         "source": "/Users/mikeporet/StudioProjects/SmartStudio/app/src/main/res/drawable/general_background_portrait.jpg"
+    },
+    {
+        "merged": "/Users/mikeporet/StudioProjects/SmartStudio/app/build/intermediates/res/merged/debug/drawable_pause_icon.png.flat",
+        "source": "/Users/mikeporet/StudioProjects/SmartStudio/app/src/main/res/drawable/pause_icon.png"
     },
     {
         "merged": "/Users/mikeporet/StudioProjects/SmartStudio/app/build/intermediates/res/merged/debug/drawable_control.png.flat",
@@ -64,12 +64,12 @@
         "source": "/Users/mikeporet/StudioProjects/SmartStudio/app/src/main/res/drawable/nowifi_small.png"
     },
     {
-        "merged": "/Users/mikeporet/StudioProjects/SmartStudio/app/build/intermediates/res/merged/debug/drawable_general_background.jpg.flat",
-        "source": "/Users/mikeporet/StudioProjects/SmartStudio/app/src/main/res/drawable/general_background.jpg"
-    },
-    {
         "merged": "/Users/mikeporet/StudioProjects/SmartStudio/app/build/intermediates/res/merged/debug/drawable_start_bg.jpg.flat",
         "source": "/Users/mikeporet/StudioProjects/SmartStudio/app/src/main/res/drawable/start_bg.jpg"
+    },
+    {
+        "merged": "/Users/mikeporet/StudioProjects/SmartStudio/app/build/intermediates/res/merged/debug/drawable_general_background.jpg.flat",
+        "source": "/Users/mikeporet/StudioProjects/SmartStudio/app/src/main/res/drawable/general_background.jpg"
     },
     {
         "merged": "/Users/mikeporet/StudioProjects/SmartStudio/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",

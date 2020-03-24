@@ -31,6 +31,9 @@ public class CurrentState extends Observable {
     //Variable to hold port number;
     private int port_number;
 
+    //Variable to hold IP address;
+    private String ip_address;
+
     //Address to fetch sync position from
     private String sync_ip;
 
@@ -121,6 +124,14 @@ public class CurrentState extends Observable {
 
     public static void increment_port(){
         instance.port_number++;
+    }
+
+    public static String getIp_address() {
+        return instance.ip_address;
+    }
+
+    public static void setIp_address(String ip_address) {
+        instance.ip_address = ip_address;
     }
 
     public static boolean isFling_wait() {
