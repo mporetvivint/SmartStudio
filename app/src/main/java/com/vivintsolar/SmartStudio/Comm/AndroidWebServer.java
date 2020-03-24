@@ -91,6 +91,6 @@ public class AndroidWebServer extends NanoHTTPD {
         else if(uri.equals("/ping")){
             return newFixedLengthResponse("Ping back atcha");
         }
-        return null;
+        return newFixedLengthResponse(Response.Status.BAD_REQUEST,MIME_PLAINTEXT,"Watchu takin' bout??");
     }
 }

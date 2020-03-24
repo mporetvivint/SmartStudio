@@ -84,7 +84,7 @@ public class ClientAddress extends AppCompatActivity {
                     String tab_port = ClientAddress.this.tab_port.getText().toString();
 
                     Intent intent = new Intent(v.getContext(), TeleprompterWaitActivity.class);
-                    intent.putExtra("tab_address", tab_ip_address + ":" + tab_port);
+                    intent.putExtra("tab_address", "http://" + tab_ip_address + ":" + tab_port);
                     intent.putExtra("vmix_address", "none");
                     startActivity(intent);
                 }

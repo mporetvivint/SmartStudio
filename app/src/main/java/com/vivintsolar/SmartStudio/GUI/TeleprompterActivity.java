@@ -7,6 +7,8 @@ import android.graphics.Color;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Build;
 import android.os.Bundle;
 import android.transition.TransitionManager;
 import android.util.DisplayMetrics;
@@ -69,6 +71,14 @@ public class TeleprompterActivity extends AppCompatActivity {
         scaleX = (metrics.widthPixels/density) / (float) Script.getWidth();
         scaleY = scaleX;
 
+        //Fix scaling for emulator
+        String device_name = Build.DEVICE;
+        if(device_name.contains("SDK") || device_name.contains("x86")){
+            scaleX = 1.55f;
+            scaleY = 1.55f;
+        }
+
+
         //Determine which layout we need
         String tally_url = getIntent().getStringExtra("vmix_address");
         if (tally_url.equals("none")) {
@@ -113,6 +123,7 @@ public class TeleprompterActivity extends AppCompatActivity {
             script_failed_container = findViewById(R.id.updated_failed_container_tally);
 
         }
+
 
         //Common Setup to both layouts
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
@@ -159,6 +170,8 @@ public class TeleprompterActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         pinger.start();
+        script_container.setScaleX(scaleX);
+        script_container.setScaleY(scaleY);
     }
 
     public void syncTo(int position){

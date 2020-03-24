@@ -38,7 +38,7 @@ public class ModePickerActivity extends AppCompatActivity {
         teleprompterMode.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 String model = Build.MODEL;
-                if(model.contains("SDK")){
+                if(model.contains("SDK") || model.contains("Emulator")){
                     Intent intent = new Intent(v.getContext(), ClientAddress.class);
                     startActivity(intent);
                 }

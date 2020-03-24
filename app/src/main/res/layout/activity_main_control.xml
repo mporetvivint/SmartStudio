@@ -99,7 +99,7 @@
 
     <ScrollView
         android:id="@+id/control_script_container"
-        android:layout_width="match_parent"
+        android:layout_width="800dp"
         android:layout_height="384dp"
         android:layout_below="@id/speed_container">
 
