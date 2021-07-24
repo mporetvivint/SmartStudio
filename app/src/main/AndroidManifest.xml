@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.vivintsolar.SmartStudio">
+    package="com.sunrun.leaguemediaassistant">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -27,53 +27,14 @@
             android:value="barcode" />
 
         <activity
-            android:name=".GUI.TeleprompterActivity"
-            android:screenOrientation="landscape">
+            android:name="com.sunrun.leaguemediaassistant.GUI.BarcodeCaptureActivity">
             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".GUI.ModePickerActivity"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".GUI.AddClientActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data
-                    android:host="smartstudio.vivintsolar.com"
-                    android:mimeType="text/plain"
-                    android:pathPrefix="/script/"
-                    android:scheme="http" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".GUI.BarcodeCaptureActivity" />
-        <activity
-            android:name=".GUI.ClientAddress"
-            android:screenOrientation="landscape" />
-        <activity
-            android:name=".GUI.TallyOnlyActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_tally_only"
-            android:screenOrientation="landscape"
-            android:theme="@style/FullscreenTheme" />
-        <activity
-            android:name=".GUI.MainControlActivity"
-            android:screenOrientation="portrait" />
-        <activity android:name=".GUI.TeleprompterWaitActivity" />
-        <activity android:name=".GUI.NoWifiActivity"></activity>
-        <receiver android:name="com.vivintsolar.SmartStudio.Comm.WifiStateReciever" >
+        <activity android:name="com.sunrun.leaguemediaassistant.GUI.NoWifiActivity"></activity>
+        <receiver android:name="com.sunrun.leaguemediaassistant.Comm.WifiStateReciever" >
             <intent-filter android:priority="100">
                 <action android:name="android.net.wifi.STATE_CHANGE" />
             </intent-filter>

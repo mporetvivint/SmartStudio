@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/smart_studio_landscape"
     android:gravity="center_vertical"
-    tools:context="com.vivintsolar.SmartStudio.GUI.NoWifiActivity">
+    tools:context="com.sunrun.leaguemediaassistant.GUI.NoWifiActivity">
 
     <TextView
         android:id="@+id/textView"

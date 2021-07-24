@@ -1,16 +1,16 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:2:1-83:12
-INJECTED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:2:1-83:12
-INJECTED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:2:1-83:12
-INJECTED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:2:1-83:12
+ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:2:1-44:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\72755d8593c3ca1ed00b11907b10c688\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\65c09879886c04dd03c37ecd65c89ae1\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\80b69e0281975f7e9accaab0f9198800\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-ml-vision-barcode-model:16.0.2] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\b10b1a0081cf93507e2cbce95c3dced3\jetified-firebase-ml-vision-barcode-model-16.0.2\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-ml-vision:24.0.1] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\4d871cb6317c4b7b12d5e5cd7dbaf5e5\jetified-firebase-ml-vision-24.0.1\AndroidManifest.xml:2:1-18:12
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\f783bc71a7f6b8ff736b6c5aa7735a41\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.volley:volley:1.1.1] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\e55f59004a3ff3ad15a8165f4ea67862\jetified-volley-1.1.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\5d402ab3624367fc652ce95523629fb9\jetified-volley-1.1.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.gms:play-services-vision:19.0.0] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\d7cf539904629361177b4cf2578a7522\jetified-play-services-vision-19.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\4df3d9fd6f03b0cbba04f7c8e58fecf3\jetified-play-services-auth-base-17.0.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-vision-image-label:18.0.1] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\037adc90b55423afc302bd8e0b1ad19c\jetified-play-services-vision-image-label-18.0.1\AndroidManifest.xml:2:1-9:12
@@ -56,20 +56,20 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\mike.poret\.gradle\c
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\dcf4af4213d59bd5fe489359c2b51b96\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\e5f4ab83b7154d8dd7689c213d4008f9\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\3ad98f043f0e278e1b4f445317842885\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:2:1-83:12
-INJECTED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:2:1-83:12
-INJECTED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:2:1-83:12
+INJECTED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:2:1-44:12
 	package
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:3:5-42
+		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:3:5-46
 		INJECTED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:2:1-83:12
+		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:2:1-44:12
 		INJECTED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:2:1-83:12
+		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:2:1-44:12
 		INJECTED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:2:11-69
@@ -98,13 +98,13 @@ ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidMa
 	android:name
 		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:9:22-68
 application
-ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:11:5-81:19
+ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:11:5-42:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\65c09879886c04dd03c37ecd65c89ae1\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\65c09879886c04dd03c37ecd65c89ae1\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-ml-vision:24.0.1] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\4d871cb6317c4b7b12d5e5cd7dbaf5e5\jetified-firebase-ml-vision-24.0.1\AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.firebase:firebase-ml-vision:24.0.1] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\4d871cb6317c4b7b12d5e5cd7dbaf5e5\jetified-firebase-ml-vision-24.0.1\AndroidManifest.xml:8:5-16:19
-MERGED from [com.android.volley:volley:1.1.1] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\e55f59004a3ff3ad15a8165f4ea67862\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
-MERGED from [com.android.volley:volley:1.1.1] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\e55f59004a3ff3ad15a8165f4ea67862\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\5d402ab3624367fc652ce95523629fb9\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\5d402ab3624367fc652ce95523629fb9\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services-vision:19.0.0] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\d7cf539904629361177b4cf2578a7522\jetified-play-services-vision-19.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-vision:19.0.0] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\d7cf539904629361177b4cf2578a7522\jetified-play-services-vision-19.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-vision-image-label:18.0.1] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\037adc90b55423afc302bd8e0b1ad19c\jetified-play-services-vision-image-label-18.0.1\AndroidManifest.xml:7:5-20
@@ -171,106 +171,36 @@ ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidMa
 		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:27:13-36
 	android:name
 		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:26:13-70
-activity#com.vivintsolar.SmartStudio.GUI.TeleprompterActivity
+activity#com.sunrun.leaguemediaassistant.GUI.BarcodeCaptureActivity
 ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:29:9-35:20
-	android:screenOrientation
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:31:13-50
 	android:name
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:30:13-53
-intent-filter#category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:32:13-34:29
+		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:30:13-86
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:31:13-34:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:32:17-69
+	android:name
+		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:32:25-66
 category#android.intent.category.LAUNCHER
 ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:33:17-77
 	android:name
 		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:33:27-74
-activity#com.vivintsolar.SmartStudio.GUI.ModePickerActivity
-ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:36:9-45:20
-	android:screenOrientation
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:38:13-50
+activity#com.sunrun.leaguemediaassistant.GUI.NoWifiActivity
+ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:36:9-96
 	android:name
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:37:13-51
-intent-filter#action:name:android.intent.action.MAIN+action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:39:13-44:29
-action#android.intent.action.MAIN
-ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:40:17-69
+		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:36:19-84
+receiver#com.sunrun.leaguemediaassistant.Comm.WifiStateReciever
+ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:37:9-41:20
 	android:name
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:40:25-66
-activity#com.vivintsolar.SmartStudio.GUI.AddClientActivity
-ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:46:9-59:20
-	android:name
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:46:19-56
-intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:smartstudio.vivintsolar.com+data:mimeType:text/plain+data:pathPrefix:/script/+data:scheme:http
-ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:47:13-58:29
-action#android.intent.action.VIEW
-ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:48:17-69
-	android:name
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:48:25-66
-category#android.intent.category.DEFAULT
-ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:50:17-76
-	android:name
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:50:27-73
-category#android.intent.category.BROWSABLE
-ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:51:17-78
-	android:name
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:51:27-75
-data
-ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:53:17-57:45
-	android:host
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:54:21-63
-	android:scheme
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:57:21-42
-	android:mimeType
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:55:21-50
-	android:pathPrefix
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:56:21-50
-activity#com.vivintsolar.SmartStudio.GUI.BarcodeCaptureActivity
-ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:60:9-61:58
-	android:name
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:61:13-55
-activity#com.vivintsolar.SmartStudio.GUI.ClientAddress
-ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:62:9-64:53
-	android:screenOrientation
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:64:13-50
-	android:name
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:63:13-46
-activity#com.vivintsolar.SmartStudio.GUI.TallyOnlyActivity
-ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:65:9-70:54
-	android:screenOrientation
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:69:13-50
-	android:label
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:68:13-62
-	android:configChanges
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:67:13-74
-	android:theme
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:70:13-51
-	android:name
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:66:13-50
-activity#com.vivintsolar.SmartStudio.GUI.MainControlActivity
-ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:71:9-73:52
-	android:screenOrientation
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:73:13-49
-	android:name
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:72:13-52
-activity#com.vivintsolar.SmartStudio.GUI.TeleprompterWaitActivity
-ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:74:9-66
-	android:name
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:74:19-63
-activity#com.vivintsolar.SmartStudio.GUI.NoWifiActivity
-ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:75:9-65
-	android:name
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:75:19-53
-receiver#com.vivintsolar.SmartStudio.Comm.WifiStateReciever
-ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:76:9-80:20
-	android:name
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:76:19-84
+		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:37:19-88
 intent-filter#action:name:android.net.wifi.STATE_CHANGE
-ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:77:13-79:29
+ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:38:13-40:29
 	android:priority
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:77:28-50
+		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:38:28-50
 action#android.net.wifi.STATE_CHANGE
-ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:78:17-72
+ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:39:17-72
 	android:name
-		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:78:25-69
+		ADDED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml:39:25-69
 uses-sdk
 INJECTED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\mike.poret\StudioProjects\SmartStudio\app\src\main\AndroidManifest.xml
@@ -287,8 +217,8 @@ MERGED from [com.google.firebase:firebase-ml-vision:24.0.1] C:\Users\mike.poret\
 MERGED from [com.google.firebase:firebase-ml-vision:24.0.1] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\4d871cb6317c4b7b12d5e5cd7dbaf5e5\jetified-firebase-ml-vision-24.0.1\AndroidManifest.xml:6:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\f783bc71a7f6b8ff736b6c5aa7735a41\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\f783bc71a7f6b8ff736b6c5aa7735a41\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.android.volley:volley:1.1.1] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\e55f59004a3ff3ad15a8165f4ea67862\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
-MERGED from [com.android.volley:volley:1.1.1] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\e55f59004a3ff3ad15a8165f4ea67862\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\5d402ab3624367fc652ce95523629fb9\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\5d402ab3624367fc652ce95523629fb9\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
 MERGED from [com.google.android.gms:play-services-vision:19.0.0] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\d7cf539904629361177b4cf2578a7522\jetified-play-services-vision-19.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-vision:19.0.0] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\d7cf539904629361177b4cf2578a7522\jetified-play-services-vision-19.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] C:\Users\mike.poret\.gradle\caches\transforms-2\files-2.1\4df3d9fd6f03b0cbba04f7c8e58fecf3\jetified-play-services-auth-base-17.0.0\AndroidManifest.xml:5:5-44
