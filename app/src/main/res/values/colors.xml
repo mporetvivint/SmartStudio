@@ -8,4 +8,5 @@
     <color name="disabledControls">#626161</color>
     <color name="enabledControls">#FFFFFF</color>
     <color name="black_overlay">#66000000</color>
+    <color name="hint">#DDDDDDFF</color>
 </resources>

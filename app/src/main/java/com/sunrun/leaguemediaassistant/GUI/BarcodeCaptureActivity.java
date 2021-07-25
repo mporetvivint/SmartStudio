@@ -7,6 +7,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.hardware.Camera;
 import android.os.Build;
@@ -293,7 +294,9 @@ public final class BarcodeCaptureActivity extends AppCompatActivity{
     }
 
     private void startTeleprompterActivity(String controller_ip_address){
-
+        Intent intent = new Intent(this, RepInfoActivity.class);
+        intent.putExtra("url",controller_ip_address);
+        startActivity(intent);
     }
 
 

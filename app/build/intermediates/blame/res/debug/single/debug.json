@@ -28,16 +28,16 @@
         "source": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\src\\main\\res\\drawable\\start_bg.jpg"
     },
     {
-        "merged": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\build\\intermediates\\res\\merged\\debug\\drawable_nowifi_small.png.flat",
-        "source": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\src\\main\\res\\drawable\\nowifi_small.png"
-    },
-    {
         "merged": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\build\\intermediates\\res\\merged\\debug\\drawable_smart_studio_portrait.jpg.flat",
         "source": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\src\\main\\res\\drawable\\smart_studio_portrait.jpg"
     },
     {
         "merged": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\build\\intermediates\\res\\merged\\debug\\drawable_teleprompter.png.flat",
         "source": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\src\\main\\res\\drawable\\teleprompter.png"
+    },
+    {
+        "merged": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\build\\intermediates\\res\\merged\\debug\\drawable_nowifi_small.png.flat",
+        "source": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\src\\main\\res\\drawable\\nowifi_small.png"
     },
     {
         "merged": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
@@ -100,12 +100,12 @@
         "source": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\src\\main\\res\\drawable\\telescope_bg_landscape.jpg"
     },
     {
-        "merged": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\build\\intermediates\\res\\merged\\debug\\drawable_general_background.jpg.flat",
-        "source": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\src\\main\\res\\drawable\\general_background.jpg"
-    },
-    {
         "merged": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\build\\intermediates\\res\\merged\\debug\\font_aldrich.ttf.flat",
         "source": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\src\\main\\res\\font\\aldrich.ttf"
+    },
+    {
+        "merged": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\build\\intermediates\\res\\merged\\debug\\drawable_general_background.jpg.flat",
+        "source": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\src\\main\\res\\drawable\\general_background.jpg"
     },
     {
         "merged": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
@@ -140,6 +140,10 @@
         "source": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\src\\main\\res\\layout\\barcode_capture.xml"
     },
     {
+        "merged": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\build\\intermediates\\res\\merged\\debug\\font_coda_extrabold.xml.flat",
+        "source": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\src\\main\\res\\font\\coda_extrabold.xml"
+    },
+    {
         "merged": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\build\\intermediates\\res\\merged\\debug\\drawable_nowifi.png.flat",
         "source": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\src\\main\\res\\drawable\\nowifi.png"
     },
@@ -150,6 +154,10 @@
     {
         "merged": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rep_info.xml.flat",
+        "source": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\src\\main\\res\\layout\\activity_rep_info.xml"
     },
     {
         "merged": "C:\\Users\\mike.poret\\StudioProjects\\SmartStudio\\app\\build\\intermediates\\res\\merged\\debug\\drawable_telescope_bg_landscape_buttons.jpg.flat",
